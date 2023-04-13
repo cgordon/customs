@@ -1,0 +1,74 @@
+EXTEND_TOP THALAN 1 2 #1
+  IF ~Global("cu#tha_imbue", "GLOBAL", 0)
+      !PartyHasItem("CU#2H001")
+      !PartyHasItem("CU#AX001")
+      !PartyHasItem("CU#BS001")
+      !PartyHasItem("CU#CL001")
+      !PartyHasItem("CU#DG001")
+      !PartyHasItem("CU#FL001")
+      !PartyHasItem("CU#HB001")
+      !PartyHasItem("CU#KT001")
+      !PartyHasItem("CU#LS001")
+      !PartyHasItem("CU#MC001")
+      !PartyHasItem("CU#MS001")
+      !PartyHasItem("CU#NT001")
+      !PartyHasItem("CU#QS001")
+      !PartyHasItem("CU#SC001")
+      !PartyHasItem("CU#SP001")
+      !PartyHasItem("CU#SS001")
+      !PartyHasItem("CU#WH001")
+      !PartyHasItem("CU#WZ001")~ THEN REPLY @2001 GOTO cu#tha_no_weapon
+  IF ~Global("cu#tha_imbue", "GLOBAL", 0)
+      OR(18) PartyHasItem("CU#2H001")
+             PartyHasItem("CU#AX001")
+             PartyHasItem("CU#BS001")
+             PartyHasItem("CU#CL001")
+             PartyHasItem("CU#DG001")
+             PartyHasItem("CU#FL001")
+             PartyHasItem("CU#HB001")
+             PartyHasItem("CU#KT001")
+             PartyHasItem("CU#LS001")
+             PartyHasItem("CU#MC001")
+             PartyHasItem("CU#MS001")
+             PartyHasItem("CU#NT001")
+             PartyHasItem("CU#QS001")
+             PartyHasItem("CU#SC001")
+             PartyHasItem("CU#SP001")
+             PartyHasItem("CU#SS001")
+             PartyHasItem("CU#WH001")
+             PartyHasItem("CU#WZ001")~ THEN REPLY @2001 GOTO cu#tha_categories
+END
+
+APPEND THALAN
+
+IF ~~ THEN BEGIN cu#tha_no_weapon
+  SAY @2002
+  IF ~~ THEN DO ~~ EXIT
+END
+
+IF ~~ THEN BEGIN cu#tha_categories
+  SAY @2003
+  IF ~~ THEN REPLY @2004 GOTO cu#tha_elem_dmg
+  IF ~~ THEN REPLY @2018 GOTO cu#tha_phys_prot
+  IF ~~ THEN REPLY @2005 EXIT
+END
+
+IF ~~ THEN BEGIN cu#tha_elem_dmg
+  SAY @2006
+  IF ~~ THEN REPLY @2007 GOTO cu#tha_acid_dmg
+  IF ~~ THEN REPLY @2008 GOTO cu#tha_cold_dmg
+  IF ~~ THEN REPLY @2009 GOTO cu#tha_fire_dmg
+  IF ~~ THEN REPLY @2010 GOTO cu#tha_elec_dmg
+  IF ~~ THEN REPLY @2005 EXIT
+END
+
+IF ~~ THEN BEGIN cu#tha_phys_prot
+  SAY @2019
+  IF ~~ THEN REPLY @2020 GOTO cu#tha_phys_ac
+  IF ~~ THEN REPLY @2005 EXIT
+END
+
+IF ~~ THEN BEGIN cu#tha_lack_funds
+  SAY @2011
+  IF ~~ THEN DO ~~ EXIT
+END

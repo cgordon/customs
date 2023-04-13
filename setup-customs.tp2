@@ -1,0 +1,18 @@
+BACKUP ~customs/backup~
+AUTHOR ~Charles and Henry Gordon (charles.gordon@gmail.com)~
+
+VERSION ~v1.0~
+
+LANGUAGE
+    ~English~
+    ~English~
+~customs/tra/English/items.tra~
+~customs/tra/English/setup.tra~
+~customs/tra/English/taerom.tra~
+~customs/tra/English/thalan.tra~
+
+BEGIN @9001
+
+COMPILE ~customs/dlg/taerom.d~
+COMPILE ~customs/dlg/thalan.d~
+INCLUDE ~customs/lib/items.tpa~

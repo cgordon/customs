@@ -1,0 +1,828 @@
+COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC001.itm~
+  SAY NAME1 @1
+  SAY NAME2 @1
+  SAY UNIDENTIFIED_DESC @2
+  SAY DESC @2
+
+COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS001.itm~
+  SAY NAME1 @3
+  SAY NAME2 @3
+  SAY UNIDENTIFIED_DESC @4
+  SAY DESC @4
+
+COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H001.itm~
+  SAY NAME1 @5
+  SAY NAME2 @5
+  SAY UNIDENTIFIED_DESC @6
+  SAY DESC @6
+
+COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS001.itm~
+  SAY NAME1 @7
+  SAY NAME2 @7
+  SAY UNIDENTIFIED_DESC @8
+  SAY DESC @8
+
+COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT001.itm~
+  SAY NAME1 @9
+  SAY NAME2 @9
+  SAY UNIDENTIFIED_DESC @10
+  SAY DESC @10
+
+COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ001.itm~
+  SAY NAME1 @11
+  SAY NAME2 @11
+  SAY UNIDENTIFIED_DESC @12
+  SAY DESC @12
+
+COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG001.itm~
+  SAY NAME1 @13
+  SAY NAME2 @13
+  SAY UNIDENTIFIED_DESC @14
+  SAY DESC @14
+
+COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH001.itm~
+  SAY NAME1 @15
+  SAY NAME2 @15
+  SAY UNIDENTIFIED_DESC @16
+  SAY DESC @16
+
+COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL001.itm~
+  SAY NAME1 @17
+  SAY NAME2 @17
+  SAY UNIDENTIFIED_DESC @18
+  SAY DESC @18
+
+COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC001.itm~
+  SAY NAME1 @19
+  SAY NAME2 @19
+  SAY UNIDENTIFIED_DESC @20
+  SAY DESC @20
+
+COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS001.itm~
+  SAY NAME1 @21
+  SAY NAME2 @21
+  SAY UNIDENTIFIED_DESC @22
+  SAY DESC @22
+
+COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL001.itm~
+  SAY NAME1 @23
+  SAY NAME2 @23
+  SAY UNIDENTIFIED_DESC @24
+  SAY DESC @24
+
+COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX001.itm~
+  SAY NAME1 @25
+  SAY NAME2 @25
+  SAY UNIDENTIFIED_DESC @26
+  SAY DESC @26
+
+COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB001.itm~
+  SAY NAME1 @27
+  SAY NAME2 @27
+  SAY UNIDENTIFIED_DESC @28
+  SAY DESC @28
+
+COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS001.itm~
+  SAY NAME1 @29
+  SAY NAME2 @29
+  SAY UNIDENTIFIED_DESC @30
+  SAY DESC @30
+
+COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS001.itm~
+  SAY NAME1 @31
+  SAY NAME2 @31
+  SAY UNIDENTIFIED_DESC @32
+  SAY DESC @32
+
+COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT001.itm~
+  SAY NAME1 @33
+  SAY NAME2 @33
+  SAY UNIDENTIFIED_DESC @34
+  SAY DESC @34
+
+COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP001.itm~
+  SAY NAME1 @35
+  SAY NAME2 @35
+  SAY UNIDENTIFIED_DESC @36
+  SAY DESC @36
+
+COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC002.itm~
+  SAY NAME1 @37
+  SAY NAME2 @37
+  SAY UNIDENTIFIED_DESC @38
+  SAY DESC @38
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS002.itm~
+  SAY NAME1 @39
+  SAY NAME2 @39
+  SAY UNIDENTIFIED_DESC @40
+  SAY DESC @40
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H002.itm~
+  SAY NAME1 @41
+  SAY NAME2 @41
+  SAY UNIDENTIFIED_DESC @42
+  SAY DESC @42
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS002.itm~
+  SAY NAME1 @43
+  SAY NAME2 @43
+  SAY UNIDENTIFIED_DESC @44
+  SAY DESC @44
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT002.itm~
+  SAY NAME1 @45
+  SAY NAME2 @45
+  SAY UNIDENTIFIED_DESC @46
+  SAY DESC @46
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ002.itm~
+  SAY NAME1 @47
+  SAY NAME2 @47
+  SAY UNIDENTIFIED_DESC @48
+  SAY DESC @48
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG002.itm~
+  SAY NAME1 @49
+  SAY NAME2 @49
+  SAY UNIDENTIFIED_DESC @50
+  SAY DESC @50
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH002.itm~
+  SAY NAME1 @51
+  SAY NAME2 @51
+  SAY UNIDENTIFIED_DESC @52
+  SAY DESC @52
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL002.itm~
+  SAY NAME1 @53
+  SAY NAME2 @53
+  SAY UNIDENTIFIED_DESC @54
+  SAY DESC @54
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC002.itm~
+  SAY NAME1 @55
+  SAY NAME2 @55
+  SAY UNIDENTIFIED_DESC @56
+  SAY DESC @56
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS002.itm~
+  SAY NAME1 @57
+  SAY NAME2 @57
+  SAY UNIDENTIFIED_DESC @58
+  SAY DESC @58
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL002.itm~
+  SAY NAME1 @59
+  SAY NAME2 @59
+  SAY UNIDENTIFIED_DESC @60
+  SAY DESC @60
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX002.itm~
+  SAY NAME1 @61
+  SAY NAME2 @61
+  SAY UNIDENTIFIED_DESC @62
+  SAY DESC @62
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB002.itm~
+  SAY NAME1 @63
+  SAY NAME2 @63
+  SAY UNIDENTIFIED_DESC @64
+  SAY DESC @64
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS002.itm~
+  SAY NAME1 @65
+  SAY NAME2 @65
+  SAY UNIDENTIFIED_DESC @66
+  SAY DESC @66
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS002.itm~
+  SAY NAME1 @67
+  SAY NAME2 @67
+  SAY UNIDENTIFIED_DESC @68
+  SAY DESC @68
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT002.itm~
+  SAY NAME1 @69
+  SAY NAME2 @69
+  SAY UNIDENTIFIED_DESC @70
+  SAY DESC @70
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP002.itm~
+  SAY NAME1 @71
+  SAY NAME2 @71
+  SAY UNIDENTIFIED_DESC @72
+  SAY DESC @72
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC003.itm~
+  SAY NAME1 @73
+  SAY NAME2 @73
+  SAY UNIDENTIFIED_DESC @74
+  SAY DESC @74
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS003.itm~
+  SAY NAME1 @75
+  SAY NAME2 @75
+  SAY UNIDENTIFIED_DESC @76
+  SAY DESC @76
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H003.itm~
+  SAY NAME1 @77
+  SAY NAME2 @77
+  SAY UNIDENTIFIED_DESC @78
+  SAY DESC @78
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS003.itm~
+  SAY NAME1 @79
+  SAY NAME2 @79
+  SAY UNIDENTIFIED_DESC @80
+  SAY DESC @80
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT003.itm~
+  SAY NAME1 @81
+  SAY NAME2 @81
+  SAY UNIDENTIFIED_DESC @82
+  SAY DESC @82
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ003.itm~
+  SAY NAME1 @83
+  SAY NAME2 @83
+  SAY UNIDENTIFIED_DESC @84
+  SAY DESC @84
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG003.itm~
+  SAY NAME1 @85
+  SAY NAME2 @85
+  SAY UNIDENTIFIED_DESC @86
+  SAY DESC @86
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH003.itm~
+  SAY NAME1 @87
+  SAY NAME2 @87
+  SAY UNIDENTIFIED_DESC @88
+  SAY DESC @88
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL003.itm~
+  SAY NAME1 @89
+  SAY NAME2 @89
+  SAY UNIDENTIFIED_DESC @90
+  SAY DESC @90
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC003.itm~
+  SAY NAME1 @91
+  SAY NAME2 @91
+  SAY UNIDENTIFIED_DESC @92
+  SAY DESC @92
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS003.itm~
+  SAY NAME1 @93
+  SAY NAME2 @93
+  SAY UNIDENTIFIED_DESC @94
+  SAY DESC @94
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL003.itm~
+  SAY NAME1 @95
+  SAY NAME2 @95
+  SAY UNIDENTIFIED_DESC @96
+  SAY DESC @96
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX003.itm~
+  SAY NAME1 @97
+  SAY NAME2 @97
+  SAY UNIDENTIFIED_DESC @98
+  SAY DESC @98
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB003.itm~
+  SAY NAME1 @99
+  SAY NAME2 @99
+  SAY UNIDENTIFIED_DESC @100
+  SAY DESC @100
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS003.itm~
+  SAY NAME1 @101
+  SAY NAME2 @101
+  SAY UNIDENTIFIED_DESC @102
+  SAY DESC @102
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS003.itm~
+  SAY NAME1 @103
+  SAY NAME2 @103
+  SAY UNIDENTIFIED_DESC @104
+  SAY DESC @104
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT003.itm~
+  SAY NAME1 @105
+  SAY NAME2 @105
+  SAY UNIDENTIFIED_DESC @106
+  SAY DESC @106
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP003.itm~
+  SAY NAME1 @107
+  SAY NAME2 @107
+  SAY UNIDENTIFIED_DESC @108
+  SAY DESC @108
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC004.itm~
+  SAY NAME1 @109
+  SAY NAME2 @109
+  SAY UNIDENTIFIED_DESC @110
+  SAY DESC @110
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS004.itm~
+  SAY NAME1 @111
+  SAY NAME2 @111
+  SAY UNIDENTIFIED_DESC @112
+  SAY DESC @112
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H004.itm~
+  SAY NAME1 @113
+  SAY NAME2 @113
+  SAY UNIDENTIFIED_DESC @114
+  SAY DESC @114
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS004.itm~
+  SAY NAME1 @115
+  SAY NAME2 @115
+  SAY UNIDENTIFIED_DESC @116
+  SAY DESC @116
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT004.itm~
+  SAY NAME1 @117
+  SAY NAME2 @117
+  SAY UNIDENTIFIED_DESC @118
+  SAY DESC @118
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ004.itm~
+  SAY NAME1 @119
+  SAY NAME2 @119
+  SAY UNIDENTIFIED_DESC @120
+  SAY DESC @120
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG004.itm~
+  SAY NAME1 @121
+  SAY NAME2 @121
+  SAY UNIDENTIFIED_DESC @122
+  SAY DESC @122
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH004.itm~
+  SAY NAME1 @123
+  SAY NAME2 @123
+  SAY UNIDENTIFIED_DESC @124
+  SAY DESC @124
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL004.itm~
+  SAY NAME1 @125
+  SAY NAME2 @125
+  SAY UNIDENTIFIED_DESC @126
+  SAY DESC @126
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC004.itm~
+  SAY NAME1 @127
+  SAY NAME2 @127
+  SAY UNIDENTIFIED_DESC @128
+  SAY DESC @128
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS004.itm~
+  SAY NAME1 @129
+  SAY NAME2 @129
+  SAY UNIDENTIFIED_DESC @130
+  SAY DESC @130
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL004.itm~
+  SAY NAME1 @131
+  SAY NAME2 @131
+  SAY UNIDENTIFIED_DESC @132
+  SAY DESC @132
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX004.itm~
+  SAY NAME1 @133
+  SAY NAME2 @133
+  SAY UNIDENTIFIED_DESC @134
+  SAY DESC @134
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB004.itm~
+  SAY NAME1 @135
+  SAY NAME2 @135
+  SAY UNIDENTIFIED_DESC @136
+  SAY DESC @136
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS004.itm~
+  SAY NAME1 @137
+  SAY NAME2 @137
+  SAY UNIDENTIFIED_DESC @138
+  SAY DESC @138
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS004.itm~
+  SAY NAME1 @139
+  SAY NAME2 @139
+  SAY UNIDENTIFIED_DESC @140
+  SAY DESC @140
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT004.itm~
+  SAY NAME1 @141
+  SAY NAME2 @141
+  SAY UNIDENTIFIED_DESC @142
+  SAY DESC @142
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP004.itm~
+  SAY NAME1 @143
+  SAY NAME2 @143
+  SAY UNIDENTIFIED_DESC @144
+  SAY DESC @144
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC005.itm~
+  SAY NAME1 @145
+  SAY NAME2 @145
+  SAY UNIDENTIFIED_DESC @146
+  SAY DESC @146
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS005.itm~
+  SAY NAME1 @147
+  SAY NAME2 @147
+  SAY UNIDENTIFIED_DESC @148
+  SAY DESC @148
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H005.itm~
+  SAY NAME1 @149
+  SAY NAME2 @149
+  SAY UNIDENTIFIED_DESC @150
+  SAY DESC @150
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS005.itm~
+  SAY NAME1 @151
+  SAY NAME2 @151
+  SAY UNIDENTIFIED_DESC @152
+  SAY DESC @152
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT005.itm~
+  SAY NAME1 @153
+  SAY NAME2 @153
+  SAY UNIDENTIFIED_DESC @154
+  SAY DESC @154
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ005.itm~
+  SAY NAME1 @155
+  SAY NAME2 @155
+  SAY UNIDENTIFIED_DESC @156
+  SAY DESC @156
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG005.itm~
+  SAY NAME1 @157
+  SAY NAME2 @157
+  SAY UNIDENTIFIED_DESC @158
+  SAY DESC @158
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH005.itm~
+  SAY NAME1 @159
+  SAY NAME2 @159
+  SAY UNIDENTIFIED_DESC @160
+  SAY DESC @160
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL005.itm~
+  SAY NAME1 @161
+  SAY NAME2 @161
+  SAY UNIDENTIFIED_DESC @162
+  SAY DESC @162
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC005.itm~
+  SAY NAME1 @163
+  SAY NAME2 @163
+  SAY UNIDENTIFIED_DESC @164
+  SAY DESC @164
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS005.itm~
+  SAY NAME1 @165
+  SAY NAME2 @165
+  SAY UNIDENTIFIED_DESC @166
+  SAY DESC @166
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL005.itm~
+  SAY NAME1 @167
+  SAY NAME2 @167
+  SAY UNIDENTIFIED_DESC @168
+  SAY DESC @168
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX005.itm~
+  SAY NAME1 @169
+  SAY NAME2 @169
+  SAY UNIDENTIFIED_DESC @170
+  SAY DESC @170
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB005.itm~
+  SAY NAME1 @171
+  SAY NAME2 @171
+  SAY UNIDENTIFIED_DESC @172
+  SAY DESC @172
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS005.itm~
+  SAY NAME1 @173
+  SAY NAME2 @173
+  SAY UNIDENTIFIED_DESC @174
+  SAY DESC @174
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS005.itm~
+  SAY NAME1 @175
+  SAY NAME2 @175
+  SAY UNIDENTIFIED_DESC @176
+  SAY DESC @176
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT005.itm~
+  SAY NAME1 @177
+  SAY NAME2 @177
+  SAY UNIDENTIFIED_DESC @178
+  SAY DESC @178
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP005.itm~
+  SAY NAME1 @179
+  SAY NAME2 @179
+  SAY UNIDENTIFIED_DESC @180
+  SAY DESC @180
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC006.itm~
+  SAY NAME1 @181
+  SAY NAME2 @181
+  SAY UNIDENTIFIED_DESC @182
+  SAY DESC @182
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS006.itm~
+  SAY NAME1 @183
+  SAY NAME2 @183
+  SAY UNIDENTIFIED_DESC @184
+  SAY DESC @184
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H006.itm~
+  SAY NAME1 @185
+  SAY NAME2 @185
+  SAY UNIDENTIFIED_DESC @186
+  SAY DESC @186
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS006.itm~
+  SAY NAME1 @187
+  SAY NAME2 @187
+  SAY UNIDENTIFIED_DESC @188
+  SAY DESC @188
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT006.itm~
+  SAY NAME1 @189
+  SAY NAME2 @189
+  SAY UNIDENTIFIED_DESC @190
+  SAY DESC @190
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ006.itm~
+  SAY NAME1 @191
+  SAY NAME2 @191
+  SAY UNIDENTIFIED_DESC @192
+  SAY DESC @192
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG006.itm~
+  SAY NAME1 @193
+  SAY NAME2 @193
+  SAY UNIDENTIFIED_DESC @194
+  SAY DESC @194
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH006.itm~
+  SAY NAME1 @195
+  SAY NAME2 @195
+  SAY UNIDENTIFIED_DESC @196
+  SAY DESC @196
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL006.itm~
+  SAY NAME1 @197
+  SAY NAME2 @197
+  SAY UNIDENTIFIED_DESC @198
+  SAY DESC @198
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC006.itm~
+  SAY NAME1 @199
+  SAY NAME2 @199
+  SAY UNIDENTIFIED_DESC @200
+  SAY DESC @200
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS006.itm~
+  SAY NAME1 @201
+  SAY NAME2 @201
+  SAY UNIDENTIFIED_DESC @202
+  SAY DESC @202
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL006.itm~
+  SAY NAME1 @203
+  SAY NAME2 @203
+  SAY UNIDENTIFIED_DESC @204
+  SAY DESC @204
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX006.itm~
+  SAY NAME1 @205
+  SAY NAME2 @205
+  SAY UNIDENTIFIED_DESC @206
+  SAY DESC @206
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB006.itm~
+  SAY NAME1 @207
+  SAY NAME2 @207
+  SAY UNIDENTIFIED_DESC @208
+  SAY DESC @208
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS006.itm~
+  SAY NAME1 @209
+  SAY NAME2 @209
+  SAY UNIDENTIFIED_DESC @210
+  SAY DESC @210
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS006.itm~
+  SAY NAME1 @211
+  SAY NAME2 @211
+  SAY UNIDENTIFIED_DESC @212
+  SAY DESC @212
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT006.itm~
+  SAY NAME1 @213
+  SAY NAME2 @213
+  SAY UNIDENTIFIED_DESC @214
+  SAY DESC @214
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+
+COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP006.itm~
+  SAY NAME1 @215
+  SAY NAME2 @215
+  SAY UNIDENTIFIED_DESC @216
+  SAY DESC @216
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
+

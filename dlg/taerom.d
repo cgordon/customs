@@ -1,8 +1,87 @@
-EXTEND_BOTTOM TAEROM 0 8 12 14
-  IF ~Global("cu#custom_weapon", "GLOBAL", 0)~ THEN REPLY @1001 GOTO cu#tae_weapprof
+EXTEND_TOP TAEROM 0 8 12 14 #2
+  IF ~Global("cu#custom_weapon", "GLOBAL", 0)
+      GlobalLT("Chapter", "GLOBAL", 3)~ THEN REPLY @1001 GOTO cu#tae_impress
+  IF ~Global("cu#custom_weapon", "GLOBAL", 0)
+      GlobalGT("Chapter", "GLOBAL", 2)
+      OR(15)
+        ProficiencyGT(Player1, 89, 0)
+        ProficiencyGT(Player1, 90, 0)
+        ProficiencyGT(Player1, 91, 0)
+        ProficiencyGT(Player1, 92, 0)
+        ProficiencyGT(Player1, 93, 0)
+        ProficiencyGT(Player1, 94, 0)
+        ProficiencyGT(Player1, 95, 0)
+        ProficiencyGT(Player1, 96, 0)
+        ProficiencyGT(Player1, 97, 0)
+        ProficiencyGT(Player1, 98, 0)
+        ProficiencyGT(Player1, 99, 0)
+        ProficiencyGT(Player1, 100, 0)
+        ProficiencyGT(Player1, 101, 0)
+        ProficiencyGT(Player1, 102, 0)
+        ProficiencyGT(Player1, 115, 0)~ THEN REPLY @1001 GOTO cu#tae_weapprof
+  IF ~Global("cu#custom_weapon", "GLOBAL", 0)
+      GlobalGT("Chapter", "GLOBAL", 2)
+      ProficiencyLT(Player1, 89, 1)
+      ProficiencyLT(Player1, 90, 1)
+      ProficiencyLT(Player1, 91, 1)
+      ProficiencyLT(Player1, 92, 1)
+      ProficiencyLT(Player1, 93, 1)
+      ProficiencyLT(Player1, 94, 1)
+      ProficiencyLT(Player1, 95, 1)
+      ProficiencyLT(Player1, 96, 1)
+      ProficiencyLT(Player1, 97, 1)
+      ProficiencyLT(Player1, 98, 1)
+      ProficiencyLT(Player1, 99, 1)
+      ProficiencyLT(Player1, 100, 1)
+      ProficiencyLT(Player1, 101, 1)
+      ProficiencyLT(Player1, 102, 1)
+      ProficiencyLT(Player1, 115, 1)~ THEN REPLY @1001 GOTO cu#tae_categories
 END
 
 APPEND TAEROM
+
+IF WEIGHT #1 ~Global("cu#custom_weapon", "GLOBAL", 0)
+    GlobalGT("Chapter", "GLOBAL", 2)
+    Global("cu#tae_gratitude", "GLOBAL", 0)~ THEN BEGIN cu#tae_gratitude
+  SAY @1061
+  IF ~OR(15)
+        ProficiencyGT(Player1, 89, 0)
+        ProficiencyGT(Player1, 90, 0)
+        ProficiencyGT(Player1, 91, 0)
+        ProficiencyGT(Player1, 92, 0)
+        ProficiencyGT(Player1, 93, 0)
+        ProficiencyGT(Player1, 94, 0)
+        ProficiencyGT(Player1, 95, 0)
+        ProficiencyGT(Player1, 96, 0)
+        ProficiencyGT(Player1, 97, 0)
+        ProficiencyGT(Player1, 98, 0)
+        ProficiencyGT(Player1, 99, 0)
+        ProficiencyGT(Player1, 100, 0)
+        ProficiencyGT(Player1, 101, 0)
+        ProficiencyGT(Player1, 102, 0)
+        ProficiencyGT(Player1, 115, 0)~ THEN DO ~SetGlobal("cu#tae_gratitude", "GLOBAL", 1)~ REPLY @1062 GOTO cu#tae_weapprof
+  IF ~ProficiencyLT(Player1, 89, 1)
+      ProficiencyLT(Player1, 90, 1)
+      ProficiencyLT(Player1, 91, 1)
+      ProficiencyLT(Player1, 92, 1)
+      ProficiencyLT(Player1, 93, 1)
+      ProficiencyLT(Player1, 94, 1)
+      ProficiencyLT(Player1, 95, 1)
+      ProficiencyLT(Player1, 96, 1)
+      ProficiencyLT(Player1, 97, 1)
+      ProficiencyLT(Player1, 98, 1)
+      ProficiencyLT(Player1, 99, 1)
+      ProficiencyLT(Player1, 100, 1)
+      ProficiencyLT(Player1, 101, 1)
+      ProficiencyLT(Player1, 102, 1)
+      ProficiencyLT(Player1, 115, 1)~ THEN DO ~SetGlobal("cu#tae_gratitude", "GLOBAL", 1)~ REPLY @1062 GOTO cu#tae_categories
+  IF ~~ THEN DO ~SetGlobal("cu#tae_gratitude", "GLOBAL", 1)~ REPLY @1063 EXIT
+END
+
+IF ~~ THEN BEGIN cu#tae_impress
+  SAY @1064
+  IF ~~ THEN EXIT
+END
 
 IF ~~ THEN BEGIN cu#tae_weapprof
   SAY @1002
@@ -24,6 +103,54 @@ IF ~~ THEN BEGIN cu#tae_weapprof
   IF ~ProficiencyGT(Player1, 101, 0)~ THEN REPLY @1022 GOTO cu#tae_mace
   IF ~ProficiencyGT(Player1, 102, 0)~ THEN REPLY @1028 GOTO cu#tae_quarterstaff
   IF ~ProficiencyGT(Player1, 115, 0)~ THEN REPLY @1021 GOTO cu#tae_club
+  IF ~~ THEN REPLY @1060 GOTO cu#tae_categories
+  IF ~~ THEN REPLY @1046 EXIT
+END
+
+IF ~~ THEN BEGIN cu#tae_categories
+  SAY @1055
+  IF ~~ THEN REPLY @1056 GOTO cu#tae_large_blades
+  IF ~~ THEN REPLY @1057 GOTO cu#tae_short_blades
+  IF ~~ THEN REPLY @1058 GOTO cu#tae_blunts
+  IF ~~ THEN REPLY @1059 GOTO cu#tae_staff
+  IF ~~ THEN REPLY @1046 EXIT
+END
+
+IF ~~ THEN BEGIN cu#tae_large_blades
+  SAY @1051
+  IF ~~ THEN REPLY @1012 GOTO cu#tae_bastard_sword
+  IF ~~ THEN REPLY @1009 GOTO cu#tae_long_sword
+  IF ~~ THEN REPLY @1013 GOTO cu#tae_two_handed_sword
+  IF ~~ THEN REPLY @1010 GOTO cu#tae_katana
+  IF ~~ THEN REPLY @1011 GOTO cu#tae_scimitar
+  IF ~~ THEN REPLY @1046 EXIT
+END
+
+IF ~~ THEN BEGIN cu#tae_short_blades
+  SAY @1052
+  IF ~~ THEN REPLY @1015 GOTO cu#tae_short_sword
+  IF ~~ THEN REPLY @1007 GOTO cu#tae_battle_axe
+  IF ~~ THEN REPLY @1017 GOTO cu#tae_wakizashi
+  IF ~~ THEN REPLY @1016 GOTO cu#tae_ninjato
+  IF ~~ THEN REPLY @1018 GOTO cu#tae_dagger
+  IF ~~ THEN REPLY @1046 EXIT
+END
+
+IF ~~ THEN BEGIN cu#tae_blunts
+  SAY @1053
+  IF ~~ THEN REPLY @1022 GOTO cu#tae_mace
+  IF ~~ THEN REPLY @1020 GOTO cu#tae_war_hammer
+  IF ~~ THEN REPLY @1024 GOTO cu#tae_flail
+  IF ~~ THEN REPLY @1021 GOTO cu#tae_club
+  IF ~~ THEN REPLY @1023 GOTO cu#tae_morning_star
+  IF ~~ THEN REPLY @1046 EXIT
+END
+
+IF ~~ THEN BEGIN cu#tae_staff
+  SAY @1054
+  IF ~~ THEN REPLY @1028 GOTO cu#tae_quarterstaff
+  IF ~~ THEN REPLY @1026 GOTO cu#tae_spear
+  IF ~~ THEN REPLY @1027 GOTO cu#tae_halberd
   IF ~~ THEN REPLY @1046 EXIT
 END
 

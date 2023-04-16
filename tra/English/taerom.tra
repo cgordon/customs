@@ -1,4 +1,4 @@
-@1001=~Could you forge a custom weapon for me, tailored to my specifications?~
+@1001=~Could you forge a custom weapon, tailored to my specifications?~
 @1002=~You've come to the right place if you want a custom weapon. I'm Taerom Fuiruim, and my skills are second to none. Give me the details of what you're looking for, and I'll forge you a weapon that'll be the envy of all who cross your path.~
 @1007=~I would like a battle axe.~
 @1009=~I would like a long sword.~
@@ -40,3 +40,17 @@
 @1048=~I do not have that much gold.~
 @1049=~Ah, I understand that funds can be an issue, but quality craftsmanship requires time, effort, and materials. I'm afraid I cannot forge a weapon without proper compensation. However, should you find yourself with sufficient coin in the future, please don't hesitate to return, and I'd be more than happy to create the weapon you desire. In the meantime, you may consider seeking out quests or opportunities to earn the necessary funds. Good luck on your journey, adventurer!~
 @1050=~Indeed, adventurer! I can forge a spear tailored to your preferences for a cost of 1,800 gold. Please keep in mind that this process will take me a few days to complete, as I want to ensure the highest quality and craftsmanship. Would you like me to proceed?~
+@1051=~Of course, I can craft a variety of fine blades! My expertise includes forging long swords, katanas, scimitars, bastard swords, and two-handed swords. Choose the type that best suits your fighting style, and I'll create a weapon of exceptional quality for you.~
+@1052=~Certainly! My skills extend to forging an array of weapons to suit various combat styles. I can create short swords, ninjatos, wakizashis, daggers, and axes. No matter your preference, rest assured that I'll craft a weapon of outstanding craftsmanship for your battles ahead.~
+@1053=~Absolutely! I'm well-versed in crafting diverse types of weaponry. I can expertly forge war hammers, clubs, maces, morningstars, and flails. Regardless of the weapon you choose, you can trust in the quality and craftsmanship I'll bring to your chosen instrument of battle.~
+@1054=~Of course! I'm skilled in crafting various types of weapons, including polearms. I can make you a spear, quarterstaff, or halberd, depending on your preference. Each weapon offers unique advantages in combat, so choose the one that best complements your fighting style, and I'll ensure that it's crafted to the highest standard.~
+@1055=~As a master blacksmith, I can craft weapons of various types to suit your needs. Whether you require a weapon with a large blade, small blade, axe, blunt weapon, or staff weapon, I can create it with the utmost precision and craftsmanship.~
+@1056=~I would like a large, bladed weapon.~
+@1057=~I would like a short, bladed weapon or axe.~
+@1058=~I would like a blunt weapon.~
+@1059=~I would like a staff weapon.~
+@1060=~What other kinds of weapons can you make?~
+@1061=~Greetings, adventurer! Your deeds have not gone unnoticed, and I wish to express my gratitude for your service. Your discovery of the source of the iron crisis in the Nashkel Mines has saved many lives and averted a great disaster. I would like to reward you for your efforts by personally crafting a masterwork weapon to your specifications, using only the finest materials and techniques.~
+@1062=~I would like you to forge me a custom weapon.~
+@1063=~Not right now, but maybe later.~
+@1064=~I pour my heart and soul into every weapon I forge, and it must be wielded by a warrior worthy of its power. But fear not, for I sense a great potential within you, so go forth and prove your mettle, adventurer.~

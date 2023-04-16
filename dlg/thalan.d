@@ -1,5 +1,6 @@
 EXTEND_TOP THALAN 1 2 #1
-  IF ~Global("cu#tha_imbue", "GLOBAL", 0)
+  IF ~Global("RumorTalkThalan", "GLOBAL", 1)
+      Global("cu#tha_imbue", "GLOBAL", 0)
       !PartyHasItem("CU#2H001")
       !PartyHasItem("CU#AX001")
       !PartyHasItem("CU#BS001")
@@ -18,7 +19,8 @@ EXTEND_TOP THALAN 1 2 #1
       !PartyHasItem("CU#SS001")
       !PartyHasItem("CU#WH001")
       !PartyHasItem("CU#WZ001")~ THEN REPLY @2001 GOTO cu#tha_no_weapon
-  IF ~Global("cu#tha_imbue", "GLOBAL", 0)
+  IF ~Global("RumorTalkThalan", "GLOBAL", 1)
+      Global("cu#tha_imbue", "GLOBAL", 0)
       OR(18) PartyHasItem("CU#2H001")
              PartyHasItem("CU#AX001")
              PartyHasItem("CU#BS001")
@@ -36,7 +38,7 @@ EXTEND_TOP THALAN 1 2 #1
              PartyHasItem("CU#SP001")
              PartyHasItem("CU#SS001")
              PartyHasItem("CU#WH001")
-             PartyHasItem("CU#WZ001")~ THEN REPLY @2001 GOTO cu#tha_categories
+             PartyHasItem("CU#WZ001")~ THEN REPLY @2003 GOTO cu#tha_elem_dmg
 END
 
 APPEND THALAN
@@ -46,25 +48,12 @@ IF ~~ THEN BEGIN cu#tha_no_weapon
   IF ~~ THEN DO ~~ EXIT
 END
 
-IF ~~ THEN BEGIN cu#tha_categories
-  SAY @2003
-  IF ~~ THEN REPLY @2004 GOTO cu#tha_elem_dmg
-  IF ~~ THEN REPLY @2018 GOTO cu#tha_phys_prot
-  IF ~~ THEN REPLY @2005 EXIT
-END
-
 IF ~~ THEN BEGIN cu#tha_elem_dmg
   SAY @2006
   IF ~~ THEN REPLY @2007 GOTO cu#tha_acid_dmg
   IF ~~ THEN REPLY @2008 GOTO cu#tha_cold_dmg
   IF ~~ THEN REPLY @2009 GOTO cu#tha_fire_dmg
   IF ~~ THEN REPLY @2010 GOTO cu#tha_elec_dmg
-  IF ~~ THEN REPLY @2005 EXIT
-END
-
-IF ~~ THEN BEGIN cu#tha_phys_prot
-  SAY @2019
-  IF ~~ THEN REPLY @2020 GOTO cu#tha_phys_ac
   IF ~~ THEN REPLY @2005 EXIT
 END
 
@@ -524,120 +513,6 @@ IF ~~ THEN BEGIN cu#tha_fire_dmg
     TakePartyGold(2000) DestroyGold(2000)
     TakePartyItemNum("CU#SP001", 1) DestroyItem("CU#SP001")
     GiveItemCreate("CU#SP005", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-  IF ~!PartyGoldGT(1999)~ THEN REPLY @2017 GOTO cu#tha_lack_funds
-  IF ~~ THEN REPLY @2005 EXIT
-END
-
-IF ~~ THEN BEGIN cu#tha_phys_ac
-  SAY @2020
-
-  IF ~PartyHasItem("CU#SC001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#SC001", 1) DestroyItem("CU#SC001")
-    GiveItemCreate("CU#SC006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#BS001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#BS001", 1) DestroyItem("CU#BS001")
-    GiveItemCreate("CU#BS006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#2H001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#2H001", 1) DestroyItem("CU#2H001")
-    GiveItemCreate("CU#2H006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#SS001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#SS001", 1) DestroyItem("CU#SS001")
-    GiveItemCreate("CU#SS006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#NT001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#NT001", 1) DestroyItem("CU#NT001")
-    GiveItemCreate("CU#NT006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#WZ001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#WZ001", 1) DestroyItem("CU#WZ001")
-    GiveItemCreate("CU#WZ006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#DG001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#DG001", 1) DestroyItem("CU#DG001")
-    GiveItemCreate("CU#DG006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#WH001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#WH001", 1) DestroyItem("CU#WH001")
-    GiveItemCreate("CU#WH006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#CL001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#CL001", 1) DestroyItem("CU#CL001")
-    GiveItemCreate("CU#CL006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#MC001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#MC001", 1) DestroyItem("CU#MC001")
-    GiveItemCreate("CU#MC006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#MS001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#MS001", 1) DestroyItem("CU#MS001")
-    GiveItemCreate("CU#MS006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#FL001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#FL001", 1) DestroyItem("CU#FL001")
-    GiveItemCreate("CU#FL006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#AX001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#AX001", 1) DestroyItem("CU#AX001")
-    GiveItemCreate("CU#AX006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#HB001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#HB001", 1) DestroyItem("CU#HB001")
-    GiveItemCreate("CU#HB006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#QS001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#QS001", 1) DestroyItem("CU#QS001")
-    GiveItemCreate("CU#QS006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#LS001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#LS001", 1) DestroyItem("CU#LS001")
-    GiveItemCreate("CU#LS006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#KT001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#KT001", 1) DestroyItem("CU#KT001")
-    GiveItemCreate("CU#KT006", Player1, 1, 1, 1)
-    SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
-
-  IF ~PartyHasItem("CU#SP001") PartyGoldGT(1999)~ THEN REPLY @2016 DO ~
-    TakePartyGold(2000) DestroyGold(2000)
-    TakePartyItemNum("CU#SP001", 1) DestroyItem("CU#SP001")
-    GiveItemCreate("CU#SP006", Player1, 1, 1, 1)
     SetGlobal("cu#tha_imbue", "GLOBAL", 1)~ EXIT
   IF ~!PartyGoldGT(1999)~ THEN REPLY @2017 GOTO cu#tha_lack_funds
   IF ~~ THEN REPLY @2005 EXIT

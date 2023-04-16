@@ -1,14 +1,28 @@
+COPY ~customs/itm/CU#SC001.BAM~ ~override/CU#SC001.BAM~
 COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC001.itm~
   SAY NAME1 @1
   SAY NAME2 @1
   SAY UNIDENTIFIED_DESC @2
   SAY DESC @2
+  WRITE_ASCII 0x003A ~CU#SC001~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_ASCII hd_offset + 0x0004 ~CU#SC001~ #8
+  END
 
+COPY ~customs/itm/CU#BS001.BAM~ ~override/CU#BS001.BAM~
 COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS001.itm~
   SAY NAME1 @3
   SAY NAME2 @3
   SAY UNIDENTIFIED_DESC @4
   SAY DESC @4
+  WRITE_ASCII 0x003A ~CU#BS001~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_ASCII hd_offset + 0x0004 ~CU#BS001~ #8
+  END
 
 COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H001.itm~
   SAY NAME1 @5
@@ -16,11 +30,18 @@ COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H001.itm~
   SAY UNIDENTIFIED_DESC @6
   SAY DESC @6
 
+COPY ~customs/itm/CU#SS001.BAM~ ~override/CU#SS001.BAM~
 COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS001.itm~
   SAY NAME1 @7
   SAY NAME2 @7
   SAY UNIDENTIFIED_DESC @8
   SAY DESC @8
+  WRITE_ASCII 0x003A ~CU#SS001~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_ASCII hd_offset + 0x0004 ~CU#SS001~ #8
+  END
 
 COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT001.itm~
   SAY NAME1 @9
@@ -28,53 +49,109 @@ COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT001.itm~
   SAY UNIDENTIFIED_DESC @10
   SAY DESC @10
 
+COPY ~customs/itm/CU#WZ001.BAM~ ~override/CU#WZ001.BAM~
 COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ001.itm~
   SAY NAME1 @11
   SAY NAME2 @11
   SAY UNIDENTIFIED_DESC @12
   SAY DESC @12
+  WRITE_ASCII 0x003A ~CU#WZ001~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_ASCII hd_offset + 0x0004 ~CU#WZ001~ #8
+  END
 
+COPY ~customs/itm/CU#DG001.BAM~ ~override/CU#DG001.BAM~
 COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG001.itm~
   SAY NAME1 @13
   SAY NAME2 @13
   SAY UNIDENTIFIED_DESC @14
   SAY DESC @14
+  WRITE_ASCII 0x003A ~CU#DG001~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_ASCII hd_offset + 0x0004 ~CU#DG001~ #8
+  END
 
+COPY ~customs/itm/CU#WH001.BAM~ ~override/CU#WH001.BAM~
 COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH001.itm~
   SAY NAME1 @15
   SAY NAME2 @15
   SAY UNIDENTIFIED_DESC @16
   SAY DESC @16
+  WRITE_ASCII 0x003A ~CU#WH001~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_ASCII hd_offset + 0x0004 ~CU#WH001~ #8
+  END
 
+COPY ~customs/itm/CU#CL001.BAM~ ~override/CU#CL001.BAM~
 COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL001.itm~
   SAY NAME1 @17
   SAY NAME2 @17
   SAY UNIDENTIFIED_DESC @18
   SAY DESC @18
+  WRITE_ASCII 0x003A ~CU#CL001~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_ASCII hd_offset + 0x0004 ~CU#CL001~ #8
+  END
 
+COPY ~customs/itm/CU#MC001.BAM~ ~override/CU#MC001.BAM~
 COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC001.itm~
   SAY NAME1 @19
   SAY NAME2 @19
   SAY UNIDENTIFIED_DESC @20
   SAY DESC @20
+  WRITE_ASCII 0x003A ~CU#MC001~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_ASCII hd_offset + 0x0004 ~CU#MC001~ #8
+  END
 
+COPY ~customs/itm/CU#MS001.BAM~ ~override/CU#MS001.BAM~
 COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS001.itm~
   SAY NAME1 @21
   SAY NAME2 @21
   SAY UNIDENTIFIED_DESC @22
   SAY DESC @22
+  WRITE_ASCII 0x003A ~CU#MS001~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_ASCII hd_offset + 0x0004 ~CU#MS001~ #8
+  END
 
+COPY ~customs/itm/CU#FL001.BAM~ ~override/CU#FL001.BAM~
 COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL001.itm~
   SAY NAME1 @23
   SAY NAME2 @23
   SAY UNIDENTIFIED_DESC @24
   SAY DESC @24
+  WRITE_ASCII 0x003A ~CU#FL001~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_ASCII hd_offset + 0x0004 ~CU#FL001~ #8
+  END
 
+COPY ~customs/itm/CU#AX001.BAM~ ~override/CU#AX001.BAM~
 COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX001.itm~
   SAY NAME1 @25
   SAY NAME2 @25
   SAY UNIDENTIFIED_DESC @26
   SAY DESC @26
+  WRITE_ASCII 0x003A ~CU#AX001~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_ASCII hd_offset + 0x0004 ~CU#AX001~ #8
+  END
 
 COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB001.itm~
   SAY NAME1 @27
@@ -88,11 +165,18 @@ COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS001.itm~
   SAY UNIDENTIFIED_DESC @30
   SAY DESC @30
 
+COPY ~customs/itm/CU#LS001.BAM~ ~override/CU#LS001.BAM~
 COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS001.itm~
   SAY NAME1 @31
   SAY NAME2 @31
   SAY UNIDENTIFIED_DESC @32
   SAY DESC @32
+  WRITE_ASCII 0x003A ~CU#LS001~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_ASCII hd_offset + 0x0004 ~CU#LS001~ #8
+  END
 
 COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT001.itm~
   SAY NAME1 @33
@@ -681,148 +765,4 @@ COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP005.itm~
   SAY DESC @180
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
-
-COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC006.itm~
-  SAY NAME1 @181
-  SAY NAME2 @181
-  SAY UNIDENTIFIED_DESC @182
-  SAY DESC @182
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS006.itm~
-  SAY NAME1 @183
-  SAY NAME2 @183
-  SAY UNIDENTIFIED_DESC @184
-  SAY DESC @184
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H006.itm~
-  SAY NAME1 @185
-  SAY NAME2 @185
-  SAY UNIDENTIFIED_DESC @186
-  SAY DESC @186
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS006.itm~
-  SAY NAME1 @187
-  SAY NAME2 @187
-  SAY UNIDENTIFIED_DESC @188
-  SAY DESC @188
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT006.itm~
-  SAY NAME1 @189
-  SAY NAME2 @189
-  SAY UNIDENTIFIED_DESC @190
-  SAY DESC @190
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ006.itm~
-  SAY NAME1 @191
-  SAY NAME2 @191
-  SAY UNIDENTIFIED_DESC @192
-  SAY DESC @192
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG006.itm~
-  SAY NAME1 @193
-  SAY NAME2 @193
-  SAY UNIDENTIFIED_DESC @194
-  SAY DESC @194
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH006.itm~
-  SAY NAME1 @195
-  SAY NAME2 @195
-  SAY UNIDENTIFIED_DESC @196
-  SAY DESC @196
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL006.itm~
-  SAY NAME1 @197
-  SAY NAME2 @197
-  SAY UNIDENTIFIED_DESC @198
-  SAY DESC @198
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC006.itm~
-  SAY NAME1 @199
-  SAY NAME2 @199
-  SAY UNIDENTIFIED_DESC @200
-  SAY DESC @200
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS006.itm~
-  SAY NAME1 @201
-  SAY NAME2 @201
-  SAY UNIDENTIFIED_DESC @202
-  SAY DESC @202
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL006.itm~
-  SAY NAME1 @203
-  SAY NAME2 @203
-  SAY UNIDENTIFIED_DESC @204
-  SAY DESC @204
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX006.itm~
-  SAY NAME1 @205
-  SAY NAME2 @205
-  SAY UNIDENTIFIED_DESC @206
-  SAY DESC @206
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB006.itm~
-  SAY NAME1 @207
-  SAY NAME2 @207
-  SAY UNIDENTIFIED_DESC @208
-  SAY DESC @208
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS006.itm~
-  SAY NAME1 @209
-  SAY NAME2 @209
-  SAY UNIDENTIFIED_DESC @210
-  SAY DESC @210
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS006.itm~
-  SAY NAME1 @211
-  SAY NAME2 @211
-  SAY UNIDENTIFIED_DESC @212
-  SAY DESC @212
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT006.itm~
-  SAY NAME1 @213
-  SAY NAME2 @213
-  SAY UNIDENTIFIED_DESC @214
-  SAY DESC @214
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
-
-COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP006.itm~
-  SAY NAME1 @215
-  SAY NAME2 @215
-  SAY UNIDENTIFIED_DESC @216
-  SAY DESC @216
-  WRITE_LONG 0x0018 THIS BOR BIT6
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 0 target = 1 timing = 2 parameter1 = 1 END
 

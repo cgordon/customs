@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import os
+
 
 ITEM_NAME = "~<CHARNAME>'s Resolve~"
 ITEM_DESC = """~This masterfully crafted {lc_name} was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim. It is made of high-quality steel, balanced for optimum performance, and engraved with intricate designs depicting <CHARNAME>'s adventures across the Sword Coast."""
@@ -335,17 +337,21 @@ MODIFIERS = [
 
 
 def write_item_tpa(items_tpa_fh, itm_file_prefix, itm_file_suffix, item_name_idx, item_desc_idx, effect):
+  bam_path = "itm/%s%s.BAM" % (itm_file_prefix, itm_file_suffix)
+  if os.path.isfile(bam_path):
+    items_tpa_fh.write("COPY ~customs/%s~ ~override/%s%s.BAM~\n" % (bam_path, itm_file_prefix, itm_file_suffix))
   items_tpa_fh.write("COPY ~customs/itm/%s000.itm~ ~override/%s%s.itm~\n" % (itm_file_prefix, itm_file_prefix, itm_file_suffix))
   items_tpa_fh.write("  SAY NAME1 @%d\n" % item_name_idx)
   items_tpa_fh.write("  SAY NAME2 @%d\n" % item_name_idx)
   items_tpa_fh.write("  SAY UNIDENTIFIED_DESC @%d\n" % item_desc_idx)
   items_tpa_fh.write("  SAY DESC @%d\n" % item_desc_idx)
-  items_tpa_fh.write("  WRITE_ASCII 0x003A ~%s%s~ #8\n" % (itm_file_prefix, itm_file_suffix))
-  items_tpa_fh.write("  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS\n")
-  items_tpa_fh.write("  PHP_EACH hd_array AS int => hd_offset\n")
-  items_tpa_fh.write("  BEGIN\n")
-  items_tpa_fh.write("    WRITE_ASCII hd_offset + 0x0004 ~%s%s~ #8\n" % (itm_file_prefix, itm_file_suffix))
-  items_tpa_fh.write("  END\n")
+  if os.path.isfile(bam_path):
+    items_tpa_fh.write("  WRITE_ASCII 0x003A ~%s%s~ #8\n" % (itm_file_prefix, itm_file_suffix))
+    items_tpa_fh.write("  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS\n")
+    items_tpa_fh.write("  PHP_EACH hd_array AS int => hd_offset\n")
+    items_tpa_fh.write("  BEGIN\n")
+    items_tpa_fh.write("    WRITE_ASCII hd_offset + 0x0004 ~%s%s~ #8\n" % (itm_file_prefix, itm_file_suffix))
+    items_tpa_fh.write("  END\n")
   if effect != "":
     items_tpa_fh.write("  WRITE_LONG 0x0018 THIS BOR BIT6\n")  # magical
     items_tpa_fh.write("  " + effect + "\n")
@@ -416,9 +422,9 @@ def generate_weapons(items_tpa_fh, items_tra_fh, taerom_d_fh, thalan_d_fh):
     thalan_d_fh.write("  SAY @%d\n" % modifier["say_idx"])
 
     for j, weapon_type in enumerate(WEAPON_TYPES):
-      write_item_tpa(items_tpa_fh, weapon_type["itm_file_prefix"], weapon_type["suffix"], item_name_idx, item_name_idx + 1, modifier["effect"])
+      write_item_tpa(items_tpa_fh, weapon_type["itm_file_prefix"], modifier["suffix"], item_name_idx, item_name_idx + 1, modifier["effect"])
       write_item_tra(items_tra_fh, item_name_idx, item_name_idx + 1, weapon_type | modifier)
-      write_thalan_dlg(thalan_d_fh, weapon_type["itm_file_prefix"], weapon_type["suffix"])
+      write_thalan_dlg(thalan_d_fh, weapon_type["itm_file_prefix"], modifier["suffix"])
       item_name_idx += 2
 
     thalan_d_fh.write("  IF ~!PartyGoldGT(1999)~ THEN REPLY @2017 GOTO cu#tha_lack_funds\n")

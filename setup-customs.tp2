@@ -10,9 +10,11 @@ LANGUAGE
 ~customs/tra/English/setup.tra~
 ~customs/tra/English/taerom.tra~
 ~customs/tra/English/thalan.tra~
+~customs/tra/English/halbaz.tra~
 
 BEGIN @9001
 
 COMPILE ~customs/dlg/taerom.d~
 COMPILE ~customs/dlg/thalan.d~
+COMPILE ~customs/dlg/halbaz.d~
 INCLUDE ~customs/lib/items.tpa~

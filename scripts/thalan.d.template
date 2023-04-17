@@ -1,4 +1,4 @@
-EXTEND_TOP THALAN 1 2 #1
+EXTEND_TOP THALAN 1 #1
   IF ~Global("RumorTalkThalan", "GLOBAL", 1)
       Global("cu#tha_imbue", "GLOBAL", 0)
       !PartyHasItem("CU#2H001")
@@ -21,6 +21,47 @@ EXTEND_TOP THALAN 1 2 #1
       !PartyHasItem("CU#WZ001")~ THEN REPLY @2001 GOTO cu#tha_no_weapon
   IF ~Global("RumorTalkThalan", "GLOBAL", 1)
       Global("cu#tha_imbue", "GLOBAL", 0)
+      OR(18) PartyHasItem("CU#2H001")
+             PartyHasItem("CU#AX001")
+             PartyHasItem("CU#BS001")
+             PartyHasItem("CU#CL001")
+             PartyHasItem("CU#DG001")
+             PartyHasItem("CU#FL001")
+             PartyHasItem("CU#HB001")
+             PartyHasItem("CU#KT001")
+             PartyHasItem("CU#LS001")
+             PartyHasItem("CU#MC001")
+             PartyHasItem("CU#MS001")
+             PartyHasItem("CU#NT001")
+             PartyHasItem("CU#QS001")
+             PartyHasItem("CU#SC001")
+             PartyHasItem("CU#SP001")
+             PartyHasItem("CU#SS001")
+             PartyHasItem("CU#WH001")
+             PartyHasItem("CU#WZ001")~ THEN REPLY @2003 GOTO cu#tha_elem_dmg
+END
+
+EXTEND_TOP THALAN 2 #1
+  IF ~Global("cu#tha_imbue", "GLOBAL", 0)
+      !PartyHasItem("CU#2H001")
+      !PartyHasItem("CU#AX001")
+      !PartyHasItem("CU#BS001")
+      !PartyHasItem("CU#CL001")
+      !PartyHasItem("CU#DG001")
+      !PartyHasItem("CU#FL001")
+      !PartyHasItem("CU#HB001")
+      !PartyHasItem("CU#KT001")
+      !PartyHasItem("CU#LS001")
+      !PartyHasItem("CU#MC001")
+      !PartyHasItem("CU#MS001")
+      !PartyHasItem("CU#NT001")
+      !PartyHasItem("CU#QS001")
+      !PartyHasItem("CU#SC001")
+      !PartyHasItem("CU#SP001")
+      !PartyHasItem("CU#SS001")
+      !PartyHasItem("CU#WH001")
+      !PartyHasItem("CU#WZ001")~ THEN REPLY @2001 GOTO cu#tha_no_weapon
+  IF ~Global("cu#tha_imbue", "GLOBAL", 0)
       OR(18) PartyHasItem("CU#2H001")
              PartyHasItem("CU#AX001")
              PartyHasItem("CU#BS001")

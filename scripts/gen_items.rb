@@ -4,39 +4,54 @@ import os
 
 
 ITEM_NAME = "~<CHARNAME>'s Resolve~"
-ITEM_DESC = """~This masterfully crafted {lc_name} was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim. It is made of high-quality steel, balanced for optimum performance, and engraved with intricate designs depicting <CHARNAME>'s adventures across the Sword Coast."""
+ITEM_DESC = "~This masterfully crafted {lc_name} was commissioned by <CHARNAME> and forged by the renowned blacksmith Taerom Fuiruim at the Thunderhammer Smithy in Beregost. It is made from high-quality materials, balanced perfectly for <CHARNAME> and carefully constructed to withstand the hardships of regular use."
 
 
 NO_MODIFIER_DESC = ""
 
 
-COLD_MODIFIER_DESC = """
+THALAN_COLD_MODIFIER_DESC = """
 
-The {lc_name} has been magically enhanced by the mage Thalantyr to add a potent cold coating to its strikes, so that each hit inflicts additional freezing damage on its target.
+The hedge mage Thalantyr imbued this {lc_name} with the power to freeze anything it strikes.
 """
 
 
-ACID_MODIFIER_DESC = """
+THALAN_ACID_MODIFIER_DESC = """
 
-The {lc_name} has been magically enhanced by the mage Thalantyr to add a potent acid coating to its strikes, so that each hit inflicts additional corrosive damage on its target.
+The hedge mage Thalantyr imbued this {lc_name} with the power to corrode anything it strikes.
 """
 
 
-ELEC_MODIFIER_DESC = """
+THALAN_ELEC_MODIFIER_DESC = """
 
-The {lc_name} has been magically enhanced by the mage Thalantyr to add a potent electrical coating to its strikes, so that each hit inflicts additional shocking damage on its target.
+The hedge mage Thalantyr imbued this {lc_name} with the power to shock anything it strikes.
 """
 
 
-FIRE_MODIFIER_DESC = """
+THALAN_FIRE_MODIFIER_DESC = """
 
-The {lc_name} has been magically enhanced by the mage Thalantyr to add a potent flame coating to its strikes, so that each hit inflicts additional burning damage on its target.
+The hedge mage Thalantyr imbued this {lc_name} with the power to burn anything it strikes.
 """
 
 
-AC_MODIFIER_DESC = """
+HALBAZ_COLD_MODIFIER_DESC = """
 
-The {lc_name} has been magically enhanced by the mage Thalantyr to provide some physical protection by causing enemies to miss more often.
+The hedge mage Thalantyr imbued this {lc_name} with the power to freeze anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.
+"""
+
+HALBAZ_ACID_MODIFIER_DESC = """
+
+The hedge mage Thalantyr imbued this {lc_name} with the power to corrode anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.
+"""
+
+HALBAZ_ELEC_MODIFIER_DESC = """
+
+The hedge mage Thalantyr imbued this {lc_name} with the power to shock anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.
+"""
+
+HALBAZ_FIRE_MODIFIER_DESC = """
+
+The hedge mage Thalantyr imbued this {lc_name} with the power to burn anything it strikes, and the high mage Halbazzer Drin made the effect even more powerful.
 """
 
 
@@ -44,8 +59,8 @@ ITEM_STATS = """
 
 STATISTICS:
 
-THACO: +1
-Damage: {damage}+{bonus}{extra_damage} ({type})
+THACO: +{hit_bonus}
+Damage: {damage}+{dmg_bonus}{extra_damage} ({type})
 Speed Factor: {speed}
 Proficiency Type: {prof}
 Type: {hands}
@@ -59,7 +74,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "scimitar",
     "damage": "1d8",
-    "bonus": 1,
+    "hit_bonus": 1,
+    "dmg_bonus": 1,
     "type": "slashing",
     "speed": 4,
     "hands": "One-handed",
@@ -72,7 +88,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "bastard sword",
     "damage": "2d4",
-    "bonus": 1,
+    "hit_bonus": 1,
+    "dmg_bonus": 1,
     "type": "slashing",
     "speed": 7,
     "hands": "One-handed",
@@ -85,7 +102,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "two-handed sword",
     "damage": "1d10",
-    "bonus": 1,
+    "dmg_bonus": 1,
+    "hit_bonus": 1,
     "type": "slashing",
     "speed": 9,
     "hands": "Two-handed",
@@ -98,7 +116,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "short sword",
     "damage": "1d6",
-    "bonus": 1,
+    "dmg_bonus": 1,
+    "hit_bonus": 1,
     "type": "piercing",
     "speed": 2,
     "hands": "One-handed",
@@ -111,7 +130,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "ninjato",
     "damage": "1d8",
-    "bonus": 1,
+    "dmg_bonus": 1,
+    "hit_bonus": 1,
     "type": "slashing",
     "speed": 3,
     "hands": "One-handed",
@@ -124,7 +144,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "wakizashi",
     "damage": "1d8",
-    "bonus": 1,
+    "dmg_bonus": 1,
+    "hit_bonus": 1,
     "type": "piercing",
     "speed": 2,
     "hands": "One-handed",
@@ -137,7 +158,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "dagger",
     "damage": "1d4",
-    "bonus": 1,
+    "dmg_bonus": 1,
+    "hit_bonus": 1,
     "type": "piercing",
     "speed": 1,
     "hands": "One-handed",
@@ -150,7 +172,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "war hammer",
     "damage": "1d4",
-    "bonus": 2,
+    "dmg_bonus": 2,
+    "hit_bonus": 1,
     "type": "crushing",
     "speed": 4,
     "hands": "One-handed",
@@ -163,7 +186,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "club",
     "damage": "1d6",
-    "bonus": 1,
+    "dmg_bonus": 1,
+    "hit_bonus": 1,
     "type": "crushing",
     "speed": 3,
     "hands": "One-handed",
@@ -176,7 +200,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "mace",
     "damage": "1d6",
-    "bonus": 2,
+    "dmg_bonus": 2,
+    "hit_bonus": 1,
     "type": "crushing",
     "speed": 6,
     "hands": "One-handed",
@@ -189,7 +214,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "morning star",
     "damage": "2d4",
-    "bonus": 1,
+    "dmg_bonus": 1,
+    "hit_bonus": 1,
     "type": "crushing",
     "speed": 6,
     "hands": "One-handed",
@@ -202,7 +228,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "flail",
     "damage": "1d6",
-    "bonus": 2,
+    "dmg_bonus": 2,
+    "hit_bonus": 1,
     "type": "crushing",
     "speed": 6,
     "hands": "One-handed",
@@ -215,7 +242,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "battle axe",
     "damage": "1d8",
-    "bonus": 1,
+    "dmg_bonus": 1,
+    "hit_bonus": 1,
     "type": "slashing",
     "speed": 6,
     "hands": "One-handed",
@@ -228,7 +256,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "halberd",
     "damage": "1d10",
-    "bonus": 1,
+    "dmg_bonus": 1,
+    "hit_bonus": 1,
     "type": "piercing/slashing",
     "speed": 8,
     "hands": "Two-handed",
@@ -241,7 +270,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "quarterstaff",
     "damage": "1d6",
-    "bonus": 1,
+    "dmg_bonus": 1,
+    "hit_bonus": 1,
     "type": "crushing",
     "speed": 3,
     "hands": "Two-handed",
@@ -254,7 +284,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "long sword",
     "damage": "1d8",
-    "bonus": 1,
+    "dmg_bonus": 1,
+    "hit_bonus": 1,
     "type": "slashing",
     "speed": 4,
     "hands": "One-handed",
@@ -267,7 +298,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "katana",
     "damage": "1d10",
-    "bonus": 1,
+    "dmg_bonus": 1,
+    "hit_bonus": 1,
     "type": "slashing",
     "speed": 3,
     "hands": "One-handed",
@@ -280,7 +312,8 @@ WEAPON_TYPES = [
   {
     "lc_name": "spear",
     "damage": "1d6",
-    "bonus": 1,
+    "dmg_bonus": 1,
+    "hit_bonus": 1,
     "type": "piercing",
     "speed": 5,
     "hands": "One-handed",
@@ -297,46 +330,103 @@ EMPTY_MODIFIER = {
   "extra_damage": "",
   "extra_desc": "",
   "effect": "",
+  "hit_bonus": 0,
+  "dmg_bonus": 0,
 }
 
 
-MODIFIERS = [
+THALAN_MODIFIERS = [
   {
     "say_idx": 2012,
     "tag": "cold_dmg",
     "extra_damage": ", +1 cold damage",
-    "extra_desc": COLD_MODIFIER_DESC,
+    "extra_desc": THALAN_COLD_MODIFIER_DESC,
     "effect": "LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END",
     "suffix": "002",
+    "hit_bonus": 0,
+    "dmg_bonus": 0,
   },
   {
     "say_idx": 2013,
     "tag": "acid_dmg",
     "extra_damage": ", +1 acid damage",
-    "extra_desc": ACID_MODIFIER_DESC,
+    "extra_desc": THALAN_ACID_MODIFIER_DESC,
     "effect": "LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END",
     "suffix": "003",
+    "hit_bonus": 0,
+    "dmg_bonus": 0,
   },
   {
     "say_idx": 2014,
     "tag": "elec_dmg",
     "extra_damage": ", +1 shock damage",
-    "extra_desc": ELEC_MODIFIER_DESC,
+    "extra_desc": THALAN_ELEC_MODIFIER_DESC,
     "effect": "LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END",
     "suffix": "004",
+    "hit_bonus": 0,
+    "dmg_bonus": 0,
   },
   {
     "say_idx": 2015,
     "tag": "fire_dmg",
     "extra_damage": ", +1 fire damage",
-    "extra_desc": FIRE_MODIFIER_DESC,
+    "extra_desc": THALAN_FIRE_MODIFIER_DESC,
     "effect": "LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END",
     "suffix": "005",
+    "hit_bonus": 0,
+    "dmg_bonus": 0,
+  },
+]
+
+HALBAZ_MODIFIERS = [
+  {
+    "say_idx": 2012,
+    "tag": "cold_dmg",
+    "extra_damage": ", +2 cold damage",
+    "extra_desc": HALBAZ_COLD_MODIFIER_DESC,
+    "effect": "LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END",
+    "prev_suffix": "002",
+    "suffix": "006",
+    "hit_bonus": 1,
+    "dmg_bonus": 1,
+  },
+  {
+    "say_idx": 2013,
+    "tag": "acid_dmg",
+    "extra_damage": ", +2 acid damage",
+    "extra_desc": HALBAZ_ACID_MODIFIER_DESC,
+    "effect": "LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END",
+    "prev_suffix": "003",
+    "suffix": "007",
+    "hit_bonus": 1,
+    "dmg_bonus": 1,
+  },
+  {
+    "say_idx": 2014,
+    "tag": "elec_dmg",
+    "extra_damage": ", +2 shock damage",
+    "extra_desc": HALBAZ_ELEC_MODIFIER_DESC,
+    "effect": "LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END",
+    "prev_suffix": "004",
+    "suffix": "008",
+    "hit_bonus": 1,
+    "dmg_bonus": 1,
+  },
+  {
+    "say_idx": 2015,
+    "tag": "fire_dmg",
+    "extra_damage": ", +2 fire damage",
+    "extra_desc": HALBAZ_FIRE_MODIFIER_DESC,
+    "effect": "LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END",
+    "prev_suffix": "005",
+    "suffix": "009",
+    "hit_bonus": 1,
+    "dmg_bonus": 1,
   },
 ]
 
 
-def write_item_tpa(items_tpa_fh, itm_file_prefix, itm_file_suffix, item_name_idx, item_desc_idx, effect):
+def write_item_tpa(items_tpa_fh, itm_file_prefix, itm_file_suffix, item_name_idx, item_desc_idx, wpm):
   bam_path = "itm/%s%s.BAM" % (itm_file_prefix, itm_file_suffix)
   if os.path.isfile(bam_path):
     items_tpa_fh.write("COPY ~customs/%s~ ~override/%s%s.BAM~\n" % (bam_path, itm_file_prefix, itm_file_suffix))
@@ -345,22 +435,48 @@ def write_item_tpa(items_tpa_fh, itm_file_prefix, itm_file_suffix, item_name_idx
   items_tpa_fh.write("  SAY NAME2 @%d\n" % item_name_idx)
   items_tpa_fh.write("  SAY UNIDENTIFIED_DESC @%d\n" % item_desc_idx)
   items_tpa_fh.write("  SAY DESC @%d\n" % item_desc_idx)
+  items_tpa_fh.write("  WRITE_LONG 0x0060 %d\n" % wpm["hit_bonus"])
   if os.path.isfile(bam_path):
     items_tpa_fh.write("  WRITE_ASCII 0x003A ~%s%s~ #8\n" % (itm_file_prefix, itm_file_suffix))
-    items_tpa_fh.write("  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS\n")
-    items_tpa_fh.write("  PHP_EACH hd_array AS int => hd_offset\n")
-    items_tpa_fh.write("  BEGIN\n")
+
+  items_tpa_fh.write("  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS\n")
+  items_tpa_fh.write("  PHP_EACH hd_array AS int => hd_offset\n")
+  items_tpa_fh.write("  BEGIN\n")
+  items_tpa_fh.write("    WRITE_SHORT hd_offset + 0x0014 %d\n" % wpm["hit_bonus"])
+  items_tpa_fh.write("    WRITE_SHORT hd_offset + 0x001A %d\n" % wpm["dmg_bonus"])
+  if os.path.isfile(bam_path):
     items_tpa_fh.write("    WRITE_ASCII hd_offset + 0x0004 ~%s%s~ #8\n" % (itm_file_prefix, itm_file_suffix))
-    items_tpa_fh.write("  END\n")
-  if effect != "":
+  items_tpa_fh.write("  END\n")
+  if wpm["effect"] != "":
     items_tpa_fh.write("  WRITE_LONG 0x0018 THIS BOR BIT6\n")  # magical
-    items_tpa_fh.write("  " + effect + "\n")
+    items_tpa_fh.write("  " + wpm["effect"] + "\n")
   items_tpa_fh.write("\n")
 
 
 def write_item_tra(items_tra_fh, item_name_idx, item_desc_idx, args):
   items_tra_fh.write("@%d=%s\n" % (item_name_idx, ITEM_NAME.format(**args)))
   items_tra_fh.write("@%d=%s%s%s\n" % (item_desc_idx, ITEM_DESC.format(**args), args["extra_desc"].format(**args), ITEM_STATS.format(**args)))
+
+
+def write_halbaz_header(halbaz_d_fh):
+  with open("scripts/halbaz.d.template") as halbaz_tmpl_fh:
+    for line in halbaz_tmpl_fh:
+      halbaz_d_fh.write(line)
+
+
+def write_halbaz_dlg(halbaz_d_fh, itm_file_prefix, prev_itm_file_suffix, cur_itm_file_suffix):
+  prev_itm = "\"%s%s\"" % (itm_file_prefix, prev_itm_file_suffix)
+
+  halbaz_d_fh.write("\n")
+  halbaz_d_fh.write("  IF ~PartyHasItem(%s) PartyGoldGT(3999)~ THEN REPLY @3009 DO ~\n" % prev_itm)
+  halbaz_d_fh.write("      TakePartyGold(4000) DestroyGold(4000)\n")
+  halbaz_d_fh.write("      TakePartyItemNum(%s, 1) DestroyItem(%s)\n" % (prev_itm, prev_itm))
+  halbaz_d_fh.write("      GiveItemCreate(\"%s%s\", Player1, 1, 1, 1)\n" % (itm_file_prefix, cur_itm_file_suffix))
+  halbaz_d_fh.write("      SetGlobal(\"cu#hal_imbue\", \"GLOBAL\", 1)~ EXIT\n")
+
+
+def write_halbaz_footer(halbaz_d_fh):
+  halbaz_d_fh.write("END\n\n")
 
 
 def write_thalan_header(thalan_d_fh):
@@ -406,30 +522,55 @@ def write_taerom_footer(taerom_d_fh):
   taerom_d_fh.write("END\n\n")
 
 
-def generate_weapons(items_tpa_fh, items_tra_fh, taerom_d_fh, thalan_d_fh):
+def weapon_plus_modifier(weapon_type, modifier):
+  hit_bonus = weapon_type["hit_bonus"] + modifier["hit_bonus"]
+  dmg_bonus = weapon_type["dmg_bonus"] + modifier["dmg_bonus"]
+  plus = weapon_type | modifier
+  plus["hit_bonus"] = hit_bonus
+  plus["dmg_bonus"] = dmg_bonus
+  return plus
+
+
+def generate_weapons(items_tpa_fh, items_tra_fh, taerom_d_fh, thalan_d_fh, halbaz_d_fh):
   item_name_idx = 1
 
   # Create the "masterwork" weapons that are forged by Taerom
   for i, weapon_type in enumerate(WEAPON_TYPES):
+    wpm = weapon_plus_modifier(weapon_type, EMPTY_MODIFIER)
     write_taerom_dlg(taerom_d_fh, weapon_type["itm_file_prefix"], weapon_type["lc_name"], weapon_type["say_idx"])
-    write_item_tpa(items_tpa_fh, weapon_type["itm_file_prefix"], "001", item_name_idx, item_name_idx + 1, "")
-    write_item_tra(items_tra_fh, item_name_idx, item_name_idx + 1, weapon_type | EMPTY_MODIFIER)
+    write_item_tpa(items_tpa_fh, weapon_type["itm_file_prefix"], "001", item_name_idx, item_name_idx + 1, wpm)
+    write_item_tra(items_tra_fh, item_name_idx, item_name_idx + 1, wpm)
     item_name_idx += 2
 
   # Create the enchanted weapons from Thalantyr
-  for i, modifier in enumerate(MODIFIERS):
+  for i, modifier in enumerate(THALAN_MODIFIERS):
     thalan_d_fh.write("\nIF ~~ THEN BEGIN cu#tha_%s\n" % modifier["tag"])
     thalan_d_fh.write("  SAY @%d\n" % modifier["say_idx"])
 
     for j, weapon_type in enumerate(WEAPON_TYPES):
-      write_item_tpa(items_tpa_fh, weapon_type["itm_file_prefix"], modifier["suffix"], item_name_idx, item_name_idx + 1, modifier["effect"])
-      write_item_tra(items_tra_fh, item_name_idx, item_name_idx + 1, weapon_type | modifier)
+      wpm = weapon_plus_modifier(weapon_type, modifier)
+      write_item_tpa(items_tpa_fh, weapon_type["itm_file_prefix"], modifier["suffix"], item_name_idx, item_name_idx + 1, wpm)
+      write_item_tra(items_tra_fh, item_name_idx, item_name_idx + 1, wpm)
       write_thalan_dlg(thalan_d_fh, weapon_type["itm_file_prefix"], modifier["suffix"])
       item_name_idx += 2
 
     thalan_d_fh.write("  IF ~!PartyGoldGT(1999)~ THEN REPLY @2017 GOTO cu#tha_lack_funds\n")
     thalan_d_fh.write("  IF ~~ THEN REPLY @2005 EXIT\n")
     thalan_d_fh.write("END\n")
+
+  # Create the enchanted weapons from Halbazzer Drin
+  halbaz_d_fh.write("\nIF ~~ THEN BEGIN cu#hal_imbue\n")
+  halbaz_d_fh.write("  SAY @3006\n")
+  for i, modifier in enumerate(HALBAZ_MODIFIERS):
+    for j, weapon_type in enumerate(WEAPON_TYPES):
+      wpm = weapon_plus_modifier(weapon_type, modifier)
+      write_item_tpa(items_tpa_fh, weapon_type["itm_file_prefix"], modifier["suffix"], item_name_idx, item_name_idx + 1, wpm)
+      write_item_tra(items_tra_fh, item_name_idx, item_name_idx + 1, wpm)
+      write_halbaz_dlg(halbaz_d_fh, weapon_type["itm_file_prefix"], modifier["prev_suffix"], modifier["suffix"])
+      item_name_idx += 2
+  halbaz_d_fh.write("  IF ~!PartyGoldGT(3999)~ THEN REPLY @3007 GOTO cu#hal_lack_funds\n")
+  halbaz_d_fh.write("  IF ~~ THEN REPLY @3008 EXIT\n")
+  halbaz_d_fh.write("  END\n")
 
 
 def main():
@@ -442,8 +583,12 @@ def main():
   taerom_d_fh = open("dlg/taerom.d", mode="w+")
   write_taerom_header(taerom_d_fh)
 
-  generate_weapons(items_tpa_fh, items_tra_fh, taerom_d_fh, thalan_d_fh)
+  halbaz_d_fh = open("dlg/halbaz.d", mode="w+")
+  write_halbaz_header(halbaz_d_fh)
 
+  generate_weapons(items_tpa_fh, items_tra_fh, taerom_d_fh, thalan_d_fh, halbaz_d_fh)
+
+  write_halbaz_footer(halbaz_d_fh)
   write_thalan_footer(thalan_d_fh)
   write_taerom_footer(taerom_d_fh)
 

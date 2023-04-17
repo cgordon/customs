@@ -4,10 +4,13 @@ COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC001.itm~
   SAY NAME2 @1
   SAY UNIDENTIFIED_DESC @2
   SAY DESC @2
+  WRITE_LONG 0x0060 1
   WRITE_ASCII 0x003A ~CU#SC001~ #8
   GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
   PHP_EACH hd_array AS int => hd_offset
   BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
     WRITE_ASCII hd_offset + 0x0004 ~CU#SC001~ #8
   END
 
@@ -17,10 +20,13 @@ COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS001.itm~
   SAY NAME2 @3
   SAY UNIDENTIFIED_DESC @4
   SAY DESC @4
+  WRITE_LONG 0x0060 1
   WRITE_ASCII 0x003A ~CU#BS001~ #8
   GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
   PHP_EACH hd_array AS int => hd_offset
   BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
     WRITE_ASCII hd_offset + 0x0004 ~CU#BS001~ #8
   END
 
@@ -29,6 +35,13 @@ COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H001.itm~
   SAY NAME2 @5
   SAY UNIDENTIFIED_DESC @6
   SAY DESC @6
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
 
 COPY ~customs/itm/CU#SS001.BAM~ ~override/CU#SS001.BAM~
 COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS001.itm~
@@ -36,10 +49,13 @@ COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS001.itm~
   SAY NAME2 @7
   SAY UNIDENTIFIED_DESC @8
   SAY DESC @8
+  WRITE_LONG 0x0060 1
   WRITE_ASCII 0x003A ~CU#SS001~ #8
   GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
   PHP_EACH hd_array AS int => hd_offset
   BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
     WRITE_ASCII hd_offset + 0x0004 ~CU#SS001~ #8
   END
 
@@ -48,6 +64,13 @@ COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT001.itm~
   SAY NAME2 @9
   SAY UNIDENTIFIED_DESC @10
   SAY DESC @10
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
 
 COPY ~customs/itm/CU#WZ001.BAM~ ~override/CU#WZ001.BAM~
 COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ001.itm~
@@ -55,10 +78,13 @@ COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ001.itm~
   SAY NAME2 @11
   SAY UNIDENTIFIED_DESC @12
   SAY DESC @12
+  WRITE_LONG 0x0060 1
   WRITE_ASCII 0x003A ~CU#WZ001~ #8
   GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
   PHP_EACH hd_array AS int => hd_offset
   BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
     WRITE_ASCII hd_offset + 0x0004 ~CU#WZ001~ #8
   END
 
@@ -68,10 +94,13 @@ COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG001.itm~
   SAY NAME2 @13
   SAY UNIDENTIFIED_DESC @14
   SAY DESC @14
+  WRITE_LONG 0x0060 1
   WRITE_ASCII 0x003A ~CU#DG001~ #8
   GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
   PHP_EACH hd_array AS int => hd_offset
   BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
     WRITE_ASCII hd_offset + 0x0004 ~CU#DG001~ #8
   END
 
@@ -81,10 +110,13 @@ COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH001.itm~
   SAY NAME2 @15
   SAY UNIDENTIFIED_DESC @16
   SAY DESC @16
+  WRITE_LONG 0x0060 1
   WRITE_ASCII 0x003A ~CU#WH001~ #8
   GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
   PHP_EACH hd_array AS int => hd_offset
   BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
     WRITE_ASCII hd_offset + 0x0004 ~CU#WH001~ #8
   END
 
@@ -94,10 +126,13 @@ COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL001.itm~
   SAY NAME2 @17
   SAY UNIDENTIFIED_DESC @18
   SAY DESC @18
+  WRITE_LONG 0x0060 1
   WRITE_ASCII 0x003A ~CU#CL001~ #8
   GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
   PHP_EACH hd_array AS int => hd_offset
   BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
     WRITE_ASCII hd_offset + 0x0004 ~CU#CL001~ #8
   END
 
@@ -107,10 +142,13 @@ COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC001.itm~
   SAY NAME2 @19
   SAY UNIDENTIFIED_DESC @20
   SAY DESC @20
+  WRITE_LONG 0x0060 1
   WRITE_ASCII 0x003A ~CU#MC001~ #8
   GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
   PHP_EACH hd_array AS int => hd_offset
   BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
     WRITE_ASCII hd_offset + 0x0004 ~CU#MC001~ #8
   END
 
@@ -120,10 +158,13 @@ COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS001.itm~
   SAY NAME2 @21
   SAY UNIDENTIFIED_DESC @22
   SAY DESC @22
+  WRITE_LONG 0x0060 1
   WRITE_ASCII 0x003A ~CU#MS001~ #8
   GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
   PHP_EACH hd_array AS int => hd_offset
   BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
     WRITE_ASCII hd_offset + 0x0004 ~CU#MS001~ #8
   END
 
@@ -133,10 +174,13 @@ COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL001.itm~
   SAY NAME2 @23
   SAY UNIDENTIFIED_DESC @24
   SAY DESC @24
+  WRITE_LONG 0x0060 1
   WRITE_ASCII 0x003A ~CU#FL001~ #8
   GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
   PHP_EACH hd_array AS int => hd_offset
   BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
     WRITE_ASCII hd_offset + 0x0004 ~CU#FL001~ #8
   END
 
@@ -146,10 +190,13 @@ COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX001.itm~
   SAY NAME2 @25
   SAY UNIDENTIFIED_DESC @26
   SAY DESC @26
+  WRITE_LONG 0x0060 1
   WRITE_ASCII 0x003A ~CU#AX001~ #8
   GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
   PHP_EACH hd_array AS int => hd_offset
   BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
     WRITE_ASCII hd_offset + 0x0004 ~CU#AX001~ #8
   END
 
@@ -158,12 +205,26 @@ COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB001.itm~
   SAY NAME2 @27
   SAY UNIDENTIFIED_DESC @28
   SAY DESC @28
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
 
 COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS001.itm~
   SAY NAME1 @29
   SAY NAME2 @29
   SAY UNIDENTIFIED_DESC @30
   SAY DESC @30
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
 
 COPY ~customs/itm/CU#LS001.BAM~ ~override/CU#LS001.BAM~
 COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS001.itm~
@@ -171,10 +232,13 @@ COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS001.itm~
   SAY NAME2 @31
   SAY UNIDENTIFIED_DESC @32
   SAY DESC @32
+  WRITE_LONG 0x0060 1
   WRITE_ASCII 0x003A ~CU#LS001~ #8
   GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
   PHP_EACH hd_array AS int => hd_offset
   BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
     WRITE_ASCII hd_offset + 0x0004 ~CU#LS001~ #8
   END
 
@@ -183,26 +247,60 @@ COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT001.itm~
   SAY NAME2 @33
   SAY UNIDENTIFIED_DESC @34
   SAY DESC @34
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
 
 COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP001.itm~
   SAY NAME1 @35
   SAY NAME2 @35
   SAY UNIDENTIFIED_DESC @36
   SAY DESC @36
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
 
+COPY ~customs/itm/CU#SC002.BAM~ ~override/CU#SC002.BAM~
 COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC002.itm~
   SAY NAME1 @37
   SAY NAME2 @37
   SAY UNIDENTIFIED_DESC @38
   SAY DESC @38
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#SC002~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#SC002~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#BS002.BAM~ ~override/CU#BS002.BAM~
 COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS002.itm~
   SAY NAME1 @39
   SAY NAME2 @39
   SAY UNIDENTIFIED_DESC @40
   SAY DESC @40
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#BS002~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#BS002~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -211,14 +309,31 @@ COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H002.itm~
   SAY NAME2 @41
   SAY UNIDENTIFIED_DESC @42
   SAY DESC @42
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#SS002.BAM~ ~override/CU#SS002.BAM~
 COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS002.itm~
   SAY NAME1 @43
   SAY NAME2 @43
   SAY UNIDENTIFIED_DESC @44
   SAY DESC @44
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#SS002~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#SS002~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -227,70 +342,157 @@ COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT002.itm~
   SAY NAME2 @45
   SAY UNIDENTIFIED_DESC @46
   SAY DESC @46
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#WZ002.BAM~ ~override/CU#WZ002.BAM~
 COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ002.itm~
   SAY NAME1 @47
   SAY NAME2 @47
   SAY UNIDENTIFIED_DESC @48
   SAY DESC @48
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#WZ002~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#WZ002~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#DG002.BAM~ ~override/CU#DG002.BAM~
 COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG002.itm~
   SAY NAME1 @49
   SAY NAME2 @49
   SAY UNIDENTIFIED_DESC @50
   SAY DESC @50
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#DG002~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#DG002~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#WH002.BAM~ ~override/CU#WH002.BAM~
 COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH002.itm~
   SAY NAME1 @51
   SAY NAME2 @51
   SAY UNIDENTIFIED_DESC @52
   SAY DESC @52
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#WH002~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#WH002~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#CL002.BAM~ ~override/CU#CL002.BAM~
 COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL002.itm~
   SAY NAME1 @53
   SAY NAME2 @53
   SAY UNIDENTIFIED_DESC @54
   SAY DESC @54
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#CL002~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#CL002~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#MC002.BAM~ ~override/CU#MC002.BAM~
 COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC002.itm~
   SAY NAME1 @55
   SAY NAME2 @55
   SAY UNIDENTIFIED_DESC @56
   SAY DESC @56
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#MC002~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#MC002~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#MS002.BAM~ ~override/CU#MS002.BAM~
 COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS002.itm~
   SAY NAME1 @57
   SAY NAME2 @57
   SAY UNIDENTIFIED_DESC @58
   SAY DESC @58
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#MS002~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#MS002~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#FL002.BAM~ ~override/CU#FL002.BAM~
 COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL002.itm~
   SAY NAME1 @59
   SAY NAME2 @59
   SAY UNIDENTIFIED_DESC @60
   SAY DESC @60
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#FL002~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#FL002~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#AX002.BAM~ ~override/CU#AX002.BAM~
 COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX002.itm~
   SAY NAME1 @61
   SAY NAME2 @61
   SAY UNIDENTIFIED_DESC @62
   SAY DESC @62
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#AX002~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#AX002~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -299,6 +501,13 @@ COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB002.itm~
   SAY NAME2 @63
   SAY UNIDENTIFIED_DESC @64
   SAY DESC @64
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -307,14 +516,31 @@ COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS002.itm~
   SAY NAME2 @65
   SAY UNIDENTIFIED_DESC @66
   SAY DESC @66
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#LS002.BAM~ ~override/CU#LS002.BAM~
 COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS002.itm~
   SAY NAME1 @67
   SAY NAME2 @67
   SAY UNIDENTIFIED_DESC @68
   SAY DESC @68
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#LS002~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#LS002~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -323,6 +549,13 @@ COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT002.itm~
   SAY NAME2 @69
   SAY UNIDENTIFIED_DESC @70
   SAY DESC @70
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -331,22 +564,49 @@ COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP002.itm~
   SAY NAME2 @71
   SAY UNIDENTIFIED_DESC @72
   SAY DESC @72
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#SC003.BAM~ ~override/CU#SC003.BAM~
 COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC003.itm~
   SAY NAME1 @73
   SAY NAME2 @73
   SAY UNIDENTIFIED_DESC @74
   SAY DESC @74
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#SC003~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#SC003~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#BS003.BAM~ ~override/CU#BS003.BAM~
 COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS003.itm~
   SAY NAME1 @75
   SAY NAME2 @75
   SAY UNIDENTIFIED_DESC @76
   SAY DESC @76
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#BS003~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#BS003~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -355,14 +615,31 @@ COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H003.itm~
   SAY NAME2 @77
   SAY UNIDENTIFIED_DESC @78
   SAY DESC @78
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#SS003.BAM~ ~override/CU#SS003.BAM~
 COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS003.itm~
   SAY NAME1 @79
   SAY NAME2 @79
   SAY UNIDENTIFIED_DESC @80
   SAY DESC @80
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#SS003~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#SS003~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -371,70 +648,157 @@ COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT003.itm~
   SAY NAME2 @81
   SAY UNIDENTIFIED_DESC @82
   SAY DESC @82
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#WZ003.BAM~ ~override/CU#WZ003.BAM~
 COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ003.itm~
   SAY NAME1 @83
   SAY NAME2 @83
   SAY UNIDENTIFIED_DESC @84
   SAY DESC @84
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#WZ003~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#WZ003~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#DG003.BAM~ ~override/CU#DG003.BAM~
 COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG003.itm~
   SAY NAME1 @85
   SAY NAME2 @85
   SAY UNIDENTIFIED_DESC @86
   SAY DESC @86
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#DG003~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#DG003~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#WH003.BAM~ ~override/CU#WH003.BAM~
 COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH003.itm~
   SAY NAME1 @87
   SAY NAME2 @87
   SAY UNIDENTIFIED_DESC @88
   SAY DESC @88
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#WH003~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#WH003~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#CL003.BAM~ ~override/CU#CL003.BAM~
 COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL003.itm~
   SAY NAME1 @89
   SAY NAME2 @89
   SAY UNIDENTIFIED_DESC @90
   SAY DESC @90
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#CL003~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#CL003~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#MC003.BAM~ ~override/CU#MC003.BAM~
 COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC003.itm~
   SAY NAME1 @91
   SAY NAME2 @91
   SAY UNIDENTIFIED_DESC @92
   SAY DESC @92
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#MC003~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#MC003~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#MS003.BAM~ ~override/CU#MS003.BAM~
 COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS003.itm~
   SAY NAME1 @93
   SAY NAME2 @93
   SAY UNIDENTIFIED_DESC @94
   SAY DESC @94
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#MS003~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#MS003~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#FL003.BAM~ ~override/CU#FL003.BAM~
 COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL003.itm~
   SAY NAME1 @95
   SAY NAME2 @95
   SAY UNIDENTIFIED_DESC @96
   SAY DESC @96
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#FL003~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#FL003~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#AX003.BAM~ ~override/CU#AX003.BAM~
 COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX003.itm~
   SAY NAME1 @97
   SAY NAME2 @97
   SAY UNIDENTIFIED_DESC @98
   SAY DESC @98
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#AX003~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#AX003~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -443,6 +807,13 @@ COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB003.itm~
   SAY NAME2 @99
   SAY UNIDENTIFIED_DESC @100
   SAY DESC @100
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -451,14 +822,31 @@ COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS003.itm~
   SAY NAME2 @101
   SAY UNIDENTIFIED_DESC @102
   SAY DESC @102
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#LS003.BAM~ ~override/CU#LS003.BAM~
 COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS003.itm~
   SAY NAME1 @103
   SAY NAME2 @103
   SAY UNIDENTIFIED_DESC @104
   SAY DESC @104
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#LS003~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#LS003~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -467,6 +855,13 @@ COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT003.itm~
   SAY NAME2 @105
   SAY UNIDENTIFIED_DESC @106
   SAY DESC @106
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -475,22 +870,49 @@ COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP003.itm~
   SAY NAME2 @107
   SAY UNIDENTIFIED_DESC @108
   SAY DESC @108
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#SC004.BAM~ ~override/CU#SC004.BAM~
 COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC004.itm~
   SAY NAME1 @109
   SAY NAME2 @109
   SAY UNIDENTIFIED_DESC @110
   SAY DESC @110
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#SC004~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#SC004~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#BS004.BAM~ ~override/CU#BS004.BAM~
 COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS004.itm~
   SAY NAME1 @111
   SAY NAME2 @111
   SAY UNIDENTIFIED_DESC @112
   SAY DESC @112
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#BS004~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#BS004~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -499,14 +921,31 @@ COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H004.itm~
   SAY NAME2 @113
   SAY UNIDENTIFIED_DESC @114
   SAY DESC @114
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#SS004.BAM~ ~override/CU#SS004.BAM~
 COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS004.itm~
   SAY NAME1 @115
   SAY NAME2 @115
   SAY UNIDENTIFIED_DESC @116
   SAY DESC @116
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#SS004~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#SS004~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -515,70 +954,157 @@ COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT004.itm~
   SAY NAME2 @117
   SAY UNIDENTIFIED_DESC @118
   SAY DESC @118
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#WZ004.BAM~ ~override/CU#WZ004.BAM~
 COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ004.itm~
   SAY NAME1 @119
   SAY NAME2 @119
   SAY UNIDENTIFIED_DESC @120
   SAY DESC @120
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#WZ004~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#WZ004~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#DG004.BAM~ ~override/CU#DG004.BAM~
 COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG004.itm~
   SAY NAME1 @121
   SAY NAME2 @121
   SAY UNIDENTIFIED_DESC @122
   SAY DESC @122
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#DG004~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#DG004~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#WH004.BAM~ ~override/CU#WH004.BAM~
 COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH004.itm~
   SAY NAME1 @123
   SAY NAME2 @123
   SAY UNIDENTIFIED_DESC @124
   SAY DESC @124
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#WH004~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#WH004~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#CL004.BAM~ ~override/CU#CL004.BAM~
 COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL004.itm~
   SAY NAME1 @125
   SAY NAME2 @125
   SAY UNIDENTIFIED_DESC @126
   SAY DESC @126
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#CL004~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#CL004~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#MC004.BAM~ ~override/CU#MC004.BAM~
 COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC004.itm~
   SAY NAME1 @127
   SAY NAME2 @127
   SAY UNIDENTIFIED_DESC @128
   SAY DESC @128
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#MC004~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#MC004~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#MS004.BAM~ ~override/CU#MS004.BAM~
 COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS004.itm~
   SAY NAME1 @129
   SAY NAME2 @129
   SAY UNIDENTIFIED_DESC @130
   SAY DESC @130
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#MS004~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#MS004~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#FL004.BAM~ ~override/CU#FL004.BAM~
 COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL004.itm~
   SAY NAME1 @131
   SAY NAME2 @131
   SAY UNIDENTIFIED_DESC @132
   SAY DESC @132
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#FL004~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#FL004~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#AX004.BAM~ ~override/CU#AX004.BAM~
 COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX004.itm~
   SAY NAME1 @133
   SAY NAME2 @133
   SAY UNIDENTIFIED_DESC @134
   SAY DESC @134
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#AX004~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#AX004~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -587,6 +1113,13 @@ COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB004.itm~
   SAY NAME2 @135
   SAY UNIDENTIFIED_DESC @136
   SAY DESC @136
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -595,14 +1128,31 @@ COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS004.itm~
   SAY NAME2 @137
   SAY UNIDENTIFIED_DESC @138
   SAY DESC @138
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#LS004.BAM~ ~override/CU#LS004.BAM~
 COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS004.itm~
   SAY NAME1 @139
   SAY NAME2 @139
   SAY UNIDENTIFIED_DESC @140
   SAY DESC @140
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#LS004~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#LS004~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -611,6 +1161,13 @@ COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT004.itm~
   SAY NAME2 @141
   SAY UNIDENTIFIED_DESC @142
   SAY DESC @142
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -619,22 +1176,49 @@ COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP004.itm~
   SAY NAME2 @143
   SAY UNIDENTIFIED_DESC @144
   SAY DESC @144
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#SC005.BAM~ ~override/CU#SC005.BAM~
 COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC005.itm~
   SAY NAME1 @145
   SAY NAME2 @145
   SAY UNIDENTIFIED_DESC @146
   SAY DESC @146
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#SC005~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#SC005~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#BS005.BAM~ ~override/CU#BS005.BAM~
 COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS005.itm~
   SAY NAME1 @147
   SAY NAME2 @147
   SAY UNIDENTIFIED_DESC @148
   SAY DESC @148
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#BS005~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#BS005~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -643,14 +1227,31 @@ COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H005.itm~
   SAY NAME2 @149
   SAY UNIDENTIFIED_DESC @150
   SAY DESC @150
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#SS005.BAM~ ~override/CU#SS005.BAM~
 COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS005.itm~
   SAY NAME1 @151
   SAY NAME2 @151
   SAY UNIDENTIFIED_DESC @152
   SAY DESC @152
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#SS005~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#SS005~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -659,70 +1260,157 @@ COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT005.itm~
   SAY NAME2 @153
   SAY UNIDENTIFIED_DESC @154
   SAY DESC @154
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#WZ005.BAM~ ~override/CU#WZ005.BAM~
 COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ005.itm~
   SAY NAME1 @155
   SAY NAME2 @155
   SAY UNIDENTIFIED_DESC @156
   SAY DESC @156
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#WZ005~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#WZ005~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#DG005.BAM~ ~override/CU#DG005.BAM~
 COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG005.itm~
   SAY NAME1 @157
   SAY NAME2 @157
   SAY UNIDENTIFIED_DESC @158
   SAY DESC @158
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#DG005~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#DG005~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#WH005.BAM~ ~override/CU#WH005.BAM~
 COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH005.itm~
   SAY NAME1 @159
   SAY NAME2 @159
   SAY UNIDENTIFIED_DESC @160
   SAY DESC @160
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#WH005~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#WH005~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#CL005.BAM~ ~override/CU#CL005.BAM~
 COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL005.itm~
   SAY NAME1 @161
   SAY NAME2 @161
   SAY UNIDENTIFIED_DESC @162
   SAY DESC @162
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#CL005~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#CL005~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#MC005.BAM~ ~override/CU#MC005.BAM~
 COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC005.itm~
   SAY NAME1 @163
   SAY NAME2 @163
   SAY UNIDENTIFIED_DESC @164
   SAY DESC @164
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#MC005~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#MC005~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#MS005.BAM~ ~override/CU#MS005.BAM~
 COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS005.itm~
   SAY NAME1 @165
   SAY NAME2 @165
   SAY UNIDENTIFIED_DESC @166
   SAY DESC @166
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#MS005~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#MS005~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#FL005.BAM~ ~override/CU#FL005.BAM~
 COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL005.itm~
   SAY NAME1 @167
   SAY NAME2 @167
   SAY UNIDENTIFIED_DESC @168
   SAY DESC @168
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#FL005~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#FL005~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#AX005.BAM~ ~override/CU#AX005.BAM~
 COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX005.itm~
   SAY NAME1 @169
   SAY NAME2 @169
   SAY UNIDENTIFIED_DESC @170
   SAY DESC @170
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#AX005~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#AX005~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -731,6 +1419,13 @@ COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB005.itm~
   SAY NAME2 @171
   SAY UNIDENTIFIED_DESC @172
   SAY DESC @172
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -739,14 +1434,31 @@ COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS005.itm~
   SAY NAME2 @173
   SAY UNIDENTIFIED_DESC @174
   SAY DESC @174
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
+COPY ~customs/itm/CU#LS005.BAM~ ~override/CU#LS005.BAM~
 COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS005.itm~
   SAY NAME1 @175
   SAY NAME2 @175
   SAY UNIDENTIFIED_DESC @176
   SAY DESC @176
+  WRITE_LONG 0x0060 1
+  WRITE_ASCII 0x003A ~CU#LS005~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+    WRITE_ASCII hd_offset + 0x0004 ~CU#LS005~ #8
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -755,6 +1467,13 @@ COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT005.itm~
   SAY NAME2 @177
   SAY UNIDENTIFIED_DESC @178
   SAY DESC @178
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 
@@ -763,6 +1482,1117 @@ COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP005.itm~
   SAY NAME2 @179
   SAY UNIDENTIFIED_DESC @180
   SAY DESC @180
+  WRITE_LONG 0x0060 1
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 1
+    WRITE_SHORT hd_offset + 0x001A 1
+  END
   WRITE_LONG 0x0018 THIS BOR BIT6
   LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 1 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC006.itm~
+  SAY NAME1 @181
+  SAY NAME2 @181
+  SAY UNIDENTIFIED_DESC @182
+  SAY DESC @182
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#BS006.BAM~ ~override/CU#BS006.BAM~
+COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS006.itm~
+  SAY NAME1 @183
+  SAY NAME2 @183
+  SAY UNIDENTIFIED_DESC @184
+  SAY DESC @184
+  WRITE_LONG 0x0060 2
+  WRITE_ASCII 0x003A ~CU#BS006~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#BS006~ #8
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H006.itm~
+  SAY NAME1 @185
+  SAY NAME2 @185
+  SAY UNIDENTIFIED_DESC @186
+  SAY DESC @186
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS006.itm~
+  SAY NAME1 @187
+  SAY NAME2 @187
+  SAY UNIDENTIFIED_DESC @188
+  SAY DESC @188
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT006.itm~
+  SAY NAME1 @189
+  SAY NAME2 @189
+  SAY UNIDENTIFIED_DESC @190
+  SAY DESC @190
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ006.itm~
+  SAY NAME1 @191
+  SAY NAME2 @191
+  SAY UNIDENTIFIED_DESC @192
+  SAY DESC @192
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG006.itm~
+  SAY NAME1 @193
+  SAY NAME2 @193
+  SAY UNIDENTIFIED_DESC @194
+  SAY DESC @194
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH006.itm~
+  SAY NAME1 @195
+  SAY NAME2 @195
+  SAY UNIDENTIFIED_DESC @196
+  SAY DESC @196
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 3
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL006.itm~
+  SAY NAME1 @197
+  SAY NAME2 @197
+  SAY UNIDENTIFIED_DESC @198
+  SAY DESC @198
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC006.itm~
+  SAY NAME1 @199
+  SAY NAME2 @199
+  SAY UNIDENTIFIED_DESC @200
+  SAY DESC @200
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 3
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS006.itm~
+  SAY NAME1 @201
+  SAY NAME2 @201
+  SAY UNIDENTIFIED_DESC @202
+  SAY DESC @202
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL006.itm~
+  SAY NAME1 @203
+  SAY NAME2 @203
+  SAY UNIDENTIFIED_DESC @204
+  SAY DESC @204
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 3
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#AX006.BAM~ ~override/CU#AX006.BAM~
+COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX006.itm~
+  SAY NAME1 @205
+  SAY NAME2 @205
+  SAY UNIDENTIFIED_DESC @206
+  SAY DESC @206
+  WRITE_LONG 0x0060 2
+  WRITE_ASCII 0x003A ~CU#AX006~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#AX006~ #8
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB006.itm~
+  SAY NAME1 @207
+  SAY NAME2 @207
+  SAY UNIDENTIFIED_DESC @208
+  SAY DESC @208
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS006.itm~
+  SAY NAME1 @209
+  SAY NAME2 @209
+  SAY UNIDENTIFIED_DESC @210
+  SAY DESC @210
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS006.itm~
+  SAY NAME1 @211
+  SAY NAME2 @211
+  SAY UNIDENTIFIED_DESC @212
+  SAY DESC @212
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT006.itm~
+  SAY NAME1 @213
+  SAY NAME2 @213
+  SAY UNIDENTIFIED_DESC @214
+  SAY DESC @214
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP006.itm~
+  SAY NAME1 @215
+  SAY NAME2 @215
+  SAY UNIDENTIFIED_DESC @216
+  SAY DESC @216
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC007.itm~
+  SAY NAME1 @217
+  SAY NAME2 @217
+  SAY UNIDENTIFIED_DESC @218
+  SAY DESC @218
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#BS007.BAM~ ~override/CU#BS007.BAM~
+COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS007.itm~
+  SAY NAME1 @219
+  SAY NAME2 @219
+  SAY UNIDENTIFIED_DESC @220
+  SAY DESC @220
+  WRITE_LONG 0x0060 2
+  WRITE_ASCII 0x003A ~CU#BS007~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#BS007~ #8
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H007.itm~
+  SAY NAME1 @221
+  SAY NAME2 @221
+  SAY UNIDENTIFIED_DESC @222
+  SAY DESC @222
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS007.itm~
+  SAY NAME1 @223
+  SAY NAME2 @223
+  SAY UNIDENTIFIED_DESC @224
+  SAY DESC @224
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT007.itm~
+  SAY NAME1 @225
+  SAY NAME2 @225
+  SAY UNIDENTIFIED_DESC @226
+  SAY DESC @226
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ007.itm~
+  SAY NAME1 @227
+  SAY NAME2 @227
+  SAY UNIDENTIFIED_DESC @228
+  SAY DESC @228
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG007.itm~
+  SAY NAME1 @229
+  SAY NAME2 @229
+  SAY UNIDENTIFIED_DESC @230
+  SAY DESC @230
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH007.itm~
+  SAY NAME1 @231
+  SAY NAME2 @231
+  SAY UNIDENTIFIED_DESC @232
+  SAY DESC @232
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 3
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL007.itm~
+  SAY NAME1 @233
+  SAY NAME2 @233
+  SAY UNIDENTIFIED_DESC @234
+  SAY DESC @234
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC007.itm~
+  SAY NAME1 @235
+  SAY NAME2 @235
+  SAY UNIDENTIFIED_DESC @236
+  SAY DESC @236
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 3
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS007.itm~
+  SAY NAME1 @237
+  SAY NAME2 @237
+  SAY UNIDENTIFIED_DESC @238
+  SAY DESC @238
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL007.itm~
+  SAY NAME1 @239
+  SAY NAME2 @239
+  SAY UNIDENTIFIED_DESC @240
+  SAY DESC @240
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 3
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#AX007.BAM~ ~override/CU#AX007.BAM~
+COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX007.itm~
+  SAY NAME1 @241
+  SAY NAME2 @241
+  SAY UNIDENTIFIED_DESC @242
+  SAY DESC @242
+  WRITE_LONG 0x0060 2
+  WRITE_ASCII 0x003A ~CU#AX007~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#AX007~ #8
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB007.itm~
+  SAY NAME1 @243
+  SAY NAME2 @243
+  SAY UNIDENTIFIED_DESC @244
+  SAY DESC @244
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS007.itm~
+  SAY NAME1 @245
+  SAY NAME2 @245
+  SAY UNIDENTIFIED_DESC @246
+  SAY DESC @246
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS007.itm~
+  SAY NAME1 @247
+  SAY NAME2 @247
+  SAY UNIDENTIFIED_DESC @248
+  SAY DESC @248
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT007.itm~
+  SAY NAME1 @249
+  SAY NAME2 @249
+  SAY UNIDENTIFIED_DESC @250
+  SAY DESC @250
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP007.itm~
+  SAY NAME1 @251
+  SAY NAME2 @251
+  SAY UNIDENTIFIED_DESC @252
+  SAY DESC @252
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC008.itm~
+  SAY NAME1 @253
+  SAY NAME2 @253
+  SAY UNIDENTIFIED_DESC @254
+  SAY DESC @254
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#BS008.BAM~ ~override/CU#BS008.BAM~
+COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS008.itm~
+  SAY NAME1 @255
+  SAY NAME2 @255
+  SAY UNIDENTIFIED_DESC @256
+  SAY DESC @256
+  WRITE_LONG 0x0060 2
+  WRITE_ASCII 0x003A ~CU#BS008~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#BS008~ #8
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H008.itm~
+  SAY NAME1 @257
+  SAY NAME2 @257
+  SAY UNIDENTIFIED_DESC @258
+  SAY DESC @258
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS008.itm~
+  SAY NAME1 @259
+  SAY NAME2 @259
+  SAY UNIDENTIFIED_DESC @260
+  SAY DESC @260
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT008.itm~
+  SAY NAME1 @261
+  SAY NAME2 @261
+  SAY UNIDENTIFIED_DESC @262
+  SAY DESC @262
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ008.itm~
+  SAY NAME1 @263
+  SAY NAME2 @263
+  SAY UNIDENTIFIED_DESC @264
+  SAY DESC @264
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG008.itm~
+  SAY NAME1 @265
+  SAY NAME2 @265
+  SAY UNIDENTIFIED_DESC @266
+  SAY DESC @266
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH008.itm~
+  SAY NAME1 @267
+  SAY NAME2 @267
+  SAY UNIDENTIFIED_DESC @268
+  SAY DESC @268
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 3
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL008.itm~
+  SAY NAME1 @269
+  SAY NAME2 @269
+  SAY UNIDENTIFIED_DESC @270
+  SAY DESC @270
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC008.itm~
+  SAY NAME1 @271
+  SAY NAME2 @271
+  SAY UNIDENTIFIED_DESC @272
+  SAY DESC @272
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 3
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS008.itm~
+  SAY NAME1 @273
+  SAY NAME2 @273
+  SAY UNIDENTIFIED_DESC @274
+  SAY DESC @274
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL008.itm~
+  SAY NAME1 @275
+  SAY NAME2 @275
+  SAY UNIDENTIFIED_DESC @276
+  SAY DESC @276
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 3
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#AX008.BAM~ ~override/CU#AX008.BAM~
+COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX008.itm~
+  SAY NAME1 @277
+  SAY NAME2 @277
+  SAY UNIDENTIFIED_DESC @278
+  SAY DESC @278
+  WRITE_LONG 0x0060 2
+  WRITE_ASCII 0x003A ~CU#AX008~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#AX008~ #8
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB008.itm~
+  SAY NAME1 @279
+  SAY NAME2 @279
+  SAY UNIDENTIFIED_DESC @280
+  SAY DESC @280
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS008.itm~
+  SAY NAME1 @281
+  SAY NAME2 @281
+  SAY UNIDENTIFIED_DESC @282
+  SAY DESC @282
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS008.itm~
+  SAY NAME1 @283
+  SAY NAME2 @283
+  SAY UNIDENTIFIED_DESC @284
+  SAY DESC @284
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT008.itm~
+  SAY NAME1 @285
+  SAY NAME2 @285
+  SAY UNIDENTIFIED_DESC @286
+  SAY DESC @286
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP008.itm~
+  SAY NAME1 @287
+  SAY NAME2 @287
+  SAY UNIDENTIFIED_DESC @288
+  SAY DESC @288
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SC000.itm~ ~override/CU#SC009.itm~
+  SAY NAME1 @289
+  SAY NAME2 @289
+  SAY UNIDENTIFIED_DESC @290
+  SAY DESC @290
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#BS009.BAM~ ~override/CU#BS009.BAM~
+COPY ~customs/itm/CU#BS000.itm~ ~override/CU#BS009.itm~
+  SAY NAME1 @291
+  SAY NAME2 @291
+  SAY UNIDENTIFIED_DESC @292
+  SAY DESC @292
+  WRITE_LONG 0x0060 2
+  WRITE_ASCII 0x003A ~CU#BS009~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#BS009~ #8
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#2H000.itm~ ~override/CU#2H009.itm~
+  SAY NAME1 @293
+  SAY NAME2 @293
+  SAY UNIDENTIFIED_DESC @294
+  SAY DESC @294
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SS000.itm~ ~override/CU#SS009.itm~
+  SAY NAME1 @295
+  SAY NAME2 @295
+  SAY UNIDENTIFIED_DESC @296
+  SAY DESC @296
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#NT000.itm~ ~override/CU#NT009.itm~
+  SAY NAME1 @297
+  SAY NAME2 @297
+  SAY UNIDENTIFIED_DESC @298
+  SAY DESC @298
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WZ000.itm~ ~override/CU#WZ009.itm~
+  SAY NAME1 @299
+  SAY NAME2 @299
+  SAY UNIDENTIFIED_DESC @300
+  SAY DESC @300
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#DG000.itm~ ~override/CU#DG009.itm~
+  SAY NAME1 @301
+  SAY NAME2 @301
+  SAY UNIDENTIFIED_DESC @302
+  SAY DESC @302
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#WH000.itm~ ~override/CU#WH009.itm~
+  SAY NAME1 @303
+  SAY NAME2 @303
+  SAY UNIDENTIFIED_DESC @304
+  SAY DESC @304
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 3
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#CL000.itm~ ~override/CU#CL009.itm~
+  SAY NAME1 @305
+  SAY NAME2 @305
+  SAY UNIDENTIFIED_DESC @306
+  SAY DESC @306
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MC000.itm~ ~override/CU#MC009.itm~
+  SAY NAME1 @307
+  SAY NAME2 @307
+  SAY UNIDENTIFIED_DESC @308
+  SAY DESC @308
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 3
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#MS000.itm~ ~override/CU#MS009.itm~
+  SAY NAME1 @309
+  SAY NAME2 @309
+  SAY UNIDENTIFIED_DESC @310
+  SAY DESC @310
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#FL000.itm~ ~override/CU#FL009.itm~
+  SAY NAME1 @311
+  SAY NAME2 @311
+  SAY UNIDENTIFIED_DESC @312
+  SAY DESC @312
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 3
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#AX009.BAM~ ~override/CU#AX009.BAM~
+COPY ~customs/itm/CU#AX000.itm~ ~override/CU#AX009.itm~
+  SAY NAME1 @313
+  SAY NAME2 @313
+  SAY UNIDENTIFIED_DESC @314
+  SAY DESC @314
+  WRITE_LONG 0x0060 2
+  WRITE_ASCII 0x003A ~CU#AX009~ #8
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+    WRITE_ASCII hd_offset + 0x0004 ~CU#AX009~ #8
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#HB000.itm~ ~override/CU#HB009.itm~
+  SAY NAME1 @315
+  SAY NAME2 @315
+  SAY UNIDENTIFIED_DESC @316
+  SAY DESC @316
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#QS000.itm~ ~override/CU#QS009.itm~
+  SAY NAME1 @317
+  SAY NAME2 @317
+  SAY UNIDENTIFIED_DESC @318
+  SAY DESC @318
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#LS000.itm~ ~override/CU#LS009.itm~
+  SAY NAME1 @319
+  SAY NAME2 @319
+  SAY UNIDENTIFIED_DESC @320
+  SAY DESC @320
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#KT000.itm~ ~override/CU#KT009.itm~
+  SAY NAME1 @321
+  SAY NAME2 @321
+  SAY UNIDENTIFIED_DESC @322
+  SAY DESC @322
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
+
+COPY ~customs/itm/CU#SP000.itm~ ~override/CU#SP009.itm~
+  SAY NAME1 @323
+  SAY NAME2 @323
+  SAY UNIDENTIFIED_DESC @324
+  SAY DESC @324
+  WRITE_LONG 0x0060 2
+  GET_OFFSET_ARRAY hd_array ITM_V10_HEADERS
+  PHP_EACH hd_array AS int => hd_offset
+  BEGIN
+    WRITE_SHORT hd_offset + 0x0014 2
+    WRITE_SHORT hd_offset + 0x001A 2
+  END
+  WRITE_LONG 0x0018 THIS BOR BIT6
+  LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END
 

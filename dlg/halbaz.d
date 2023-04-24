@@ -1,3 +1,9 @@
+/*
+ * Halbazzer Drin has a very simple dialog file, and I just need to append
+ * a state that checks for one of the weapons imbued by Thalantyr so that it
+ * can be upgraded. I've split it up into groups by elemental damage type so
+ * that the dialog can be a little customized to the damage type, for flavor.
+ */
 EXTEND_TOP HALBAZ 0 #1
   IF ~Global("cu#hal_imbue", "GLOBAL", 0)
       OR(18)
@@ -86,6 +92,9 @@ END
 
 APPEND HALBAZ
 
+/*
+ * Tell the player to get out into Baldur's Gate and make some $$$
+ */
 IF ~~ THEN BEGIN cu#hal_lack_funds
   SAY @3005
   IF ~~ THEN DO ~~ EXIT

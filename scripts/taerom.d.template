@@ -1,6 +1,15 @@
+/*
+ * Add transitions to states 0, 8, 12 and 14, which are all the states in which the player
+ * can ask to look at Taerom's store inventory.
+ */
 EXTEND_TOP TAEROM 0 8 12 14 #2
+  // If the player has not yet completed the Nashkel mines, Taerom isn't interested in
+  // crafting a custom weapon, and says so.
   IF ~Global("cu#custom_weapon", "GLOBAL", 0)
       GlobalLT("Chapter", "GLOBAL", 3)~ THEN REPLY @1001 GOTO cu#tae_impress
+
+  // If the player has completed the Nashkel mines, and is proficient in a melee weapon,
+  // Taerom will offer to make a weapon matching one of the player's proficiencies.
   IF ~Global("cu#custom_weapon", "GLOBAL", 0)
       GlobalGT("Chapter", "GLOBAL", 2)
       OR(15)
@@ -19,6 +28,9 @@ EXTEND_TOP TAEROM 0 8 12 14 #2
         ProficiencyGT(Player1, 101, 0)
         ProficiencyGT(Player1, 102, 0)
         ProficiencyGT(Player1, 115, 0)~ THEN REPLY @1001 GOTO cu#tae_weapprof
+
+  // If the player has completed the Nashkel mines, but is NOT proficient in a melee
+  // weapon, Taerom will offer to craft any melee weapon the player wants.
   IF ~Global("cu#custom_weapon", "GLOBAL", 0)
       GlobalGT("Chapter", "GLOBAL", 2)
       ProficiencyLT(Player1, 89, 1)
@@ -40,10 +52,18 @@ END
 
 APPEND TAEROM
 
+/*
+ * The first time the player visits Taerom after completing the Nashkel mines, he will offer
+ * his congratulations and agree to make the player a custom weapon (which the player can do
+ * at this time using one of these replies, or later, as noted in the previous EXTEND_TOP).
+ */
 IF WEIGHT #1 ~Global("cu#custom_weapon", "GLOBAL", 0)
     GlobalGT("Chapter", "GLOBAL", 2)
     Global("cu#tae_gratitude", "GLOBAL", 0)~ THEN BEGIN cu#tae_gratitude
   SAY @1061
+
+  // If the player has at least one melee weapon proficiency, Taerom will offer to craft a weapon
+  // matching one of the player's melee weapon proficiencies.
   IF ~OR(15)
         ProficiencyGT(Player1, 89, 0)
         ProficiencyGT(Player1, 90, 0)
@@ -60,6 +80,9 @@ IF WEIGHT #1 ~Global("cu#custom_weapon", "GLOBAL", 0)
         ProficiencyGT(Player1, 101, 0)
         ProficiencyGT(Player1, 102, 0)
         ProficiencyGT(Player1, 115, 0)~ THEN DO ~SetGlobal("cu#tae_gratitude", "GLOBAL", 1)~ REPLY @1062 GOTO cu#tae_weapprof
+
+  // If the player does not have any melee weapon proficiencies, Taerom will provide a menu of options
+  // for the player to craft any melee weapon.
   IF ~ProficiencyLT(Player1, 89, 1)
       ProficiencyLT(Player1, 90, 1)
       ProficiencyLT(Player1, 91, 1)
@@ -78,11 +101,19 @@ IF WEIGHT #1 ~Global("cu#custom_weapon", "GLOBAL", 0)
   IF ~~ THEN DO ~SetGlobal("cu#tae_gratitude", "GLOBAL", 1)~ REPLY @1063 EXIT
 END
 
+/*
+ * Taerom is not yet impressed enough by the player to craft a custom weapon.
+ */
 IF ~~ THEN BEGIN cu#tae_impress
   SAY @1064
   IF ~~ THEN EXIT
 END
 
+/*
+ * The player has at least one melee weapon proficiency, so Taerom will offer to make a weapon matching any of the player's
+ * melee proficiencies. Note that a proficiency like "Scimitar / Wakizashi / Ninjato" will result in all three of those
+ * weapons being offered. The player has the option to make any other kind of weapon as well, or to exit the conversation.
+ */
 IF ~~ THEN BEGIN cu#tae_weapprof
   SAY @1002
   IF ~ProficiencyGT(Player1, 89, 0)~ THEN REPLY @1012 GOTO cu#tae_bastard_sword
@@ -107,6 +138,11 @@ IF ~~ THEN BEGIN cu#tae_weapprof
   IF ~~ THEN REPLY @1046 EXIT
 END
 
+/*
+ * If the player doesn't have any melee proficiencies, or would prefer to make a weapon that does not match one of their
+ * melee proficiencies, this provides a two-level menu for selecting a weapon to create from the list of all possible
+ * melee weapons.
+ */
 IF ~~ THEN BEGIN cu#tae_categories
   SAY @1055
   IF ~~ THEN REPLY @1056 GOTO cu#tae_large_blades
@@ -154,6 +190,9 @@ IF ~~ THEN BEGIN cu#tae_staff
   IF ~~ THEN REPLY @1046 EXIT
 END
 
+/*
+ * Taerom tells the player to get out there and fix their lack of funds.
+ */
 IF ~~ THEN BEGIN cu#tae_lack_funds
   SAY @1049
   IF ~~ THEN DO ~~ EXIT

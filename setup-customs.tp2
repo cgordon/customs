@@ -1,16 +1,20 @@
 BACKUP ~customs/backup~
-AUTHOR ~Charles and Henry Gordon (charles.gordon@gmail.com)~
+AUTHOR ~Charles and Henry~
 
-VERSION ~v1.0~
+VERSION ~v0.1b~
 
 LANGUAGE
     ~English~
-    ~English~
-~customs/tra/English/items.tra~
-~customs/tra/English/setup.tra~
-~customs/tra/English/taerom.tra~
-~customs/tra/English/thalan.tra~
-~customs/tra/English/halbaz.tra~
+    ~english~
+    ~customs/tra/english/items.tra~
+    ~customs/tra/english/setup.tra~
+    ~customs/tra/english/taerom.tra~
+    ~customs/tra/english/thalan.tra~
+    ~customs/tra/english/halbaz.tra~
+
+/*
+ * Core component: install weapons and dialog with Taerom, Thalantyr and Halbazzer
+ */
 
 BEGIN @9001
 
@@ -18,3 +22,88 @@ COMPILE ~customs/dlg/taerom.d~
 COMPILE ~customs/dlg/thalan.d~
 COMPILE ~customs/dlg/halbaz.d~
 INCLUDE ~customs/lib/items.tpa~
+
+/*
+ * Remove or relocate Ashideena: remove it from the game.
+ */
+BEGIN @9003
+SUBCOMPONENT @9002
+
+COPY_EXISTING ~BASSIL.CRE~ ~override~
+  READ_LONG 0x2BC itemsoffset
+  READ_LONG 0x2B8 slotsoffset
+  READ_SSHORT (slotsoffset + 0x12) weapon1slot
+  PATCH_IF (weapon1slot >= "0") BEGIN
+    READ_ASCII (itemsoffset + weapon1slot * 0x14) weapon1res
+    PATCH_IF (~%weapon1res%~ STR_EQ ~HAMM03~) BEGIN
+      REPLACE_CRE_ITEM ~HAMM02.ITM~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+    END
+  END
+BUT_ONLY
+
+/*
+ * Remove or relocate Ashideena: relocate it to Diyab in the Iron Throne.
+ */
+BEGIN @9004
+SUBCOMPONENT @9002
+
+COPY_EXISTING ~BASSIL.CRE~ ~override~
+  READ_LONG 0x2BC itemsoffset
+  READ_LONG 0x2B8 slotsoffset
+  READ_SSHORT (slotsoffset + 0x12) weapon1slot
+  PATCH_IF (weapon1slot >= "0") BEGIN
+    READ_ASCII (itemsoffset + weapon1slot * 0x14) weapon1res
+    PATCH_IF (~%weapon1res%~ STR_EQ ~HAMM03~) BEGIN
+      REPLACE_CRE_ITEM ~HAMM02~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+
+      INNER_ACTION BEGIN
+        COPY_EXISTING ~DIYAB.CRE~ ~override~
+          REPLACE_CRE_ITEM ~HAMM03~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+        BUT_ONLY
+      END
+    END
+  END
+BUT_ONLY
+
+/*
+ * Remove or relocate Varscona: remove it from the game.
+ */
+BEGIN @9006
+SUBCOMPONENT @9005
+
+COPY_EXISTING ~GREYWO.CRE~ ~override~
+  READ_LONG 0x2BC itemsoffset
+  READ_LONG 0x2B8 slotsoffset
+  READ_SSHORT (slotsoffset + 0x12) weapon1slot
+  PATCH_IF (weapon1slot >= "0") BEGIN
+    READ_ASCII (itemsoffset + weapon1slot * 0x14) weapon1res
+    PATCH_IF (~%weapon1res%~ STR_EQ ~SW1H06~) BEGIN
+      REPLACE_CRE_ITEM ~SW1H05~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+    END
+  END
+BUT_ONLY
+
+/*
+ * Remove or relocate Varscona: relocate it to Gardush in the Iron Throne.
+ */
+BEGIN @9007
+SUBCOMPONENT @9005
+
+COPY_EXISTING ~GREYWO.CRE~ ~override~
+  READ_LONG 0x2BC itemsoffset
+  READ_LONG 0x2B8 slotsoffset
+  READ_SSHORT (slotsoffset + 0x12) weapon1slot
+  PATCH_IF (weapon1slot >= "0") BEGIN
+    READ_ASCII (itemsoffset + weapon1slot * 0x14) weapon1res
+    PATCH_IF (~%weapon1res%~ STR_EQ ~SW1H06~) BEGIN
+      REPLACE_CRE_ITEM ~SW1H05~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+
+      INNER_ACTION BEGIN
+        COPY_EXISTING ~GARDUS.CRE~ ~override~
+          REPLACE_CRE_ITEM ~SW1H06~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP
+        BUT_ONLY
+      END
+    END
+  END
+BUT_ONLY
+

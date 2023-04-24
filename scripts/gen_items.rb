@@ -380,8 +380,6 @@ THALAN_MODIFIERS = [
 
 HALBAZ_MODIFIERS = [
   {
-    "say_idx": 2012,
-    "tag": "cold_dmg",
     "extra_damage": ", +2 cold damage",
     "extra_desc": HALBAZ_COLD_MODIFIER_DESC,
     "effect": "LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x20000 timing = 1 resist_dispel = 1 probability1 = 100 END",
@@ -391,8 +389,6 @@ HALBAZ_MODIFIERS = [
     "dmg_bonus": 1,
   },
   {
-    "say_idx": 2013,
-    "tag": "acid_dmg",
     "extra_damage": ", +2 acid damage",
     "extra_desc": HALBAZ_ACID_MODIFIER_DESC,
     "effect": "LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x10000 timing = 1 resist_dispel = 1 probability1 = 100 END",
@@ -402,8 +398,6 @@ HALBAZ_MODIFIERS = [
     "dmg_bonus": 1,
   },
   {
-    "say_idx": 2014,
-    "tag": "elec_dmg",
     "extra_damage": ", +2 shock damage",
     "extra_desc": HALBAZ_ELEC_MODIFIER_DESC,
     "effect": "LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x40000 timing = 1 resist_dispel = 1 probability1 = 100 END",
@@ -413,8 +407,6 @@ HALBAZ_MODIFIERS = [
     "dmg_bonus": 1,
   },
   {
-    "say_idx": 2015,
-    "tag": "fire_dmg",
     "extra_damage": ", +2 fire damage",
     "extra_desc": HALBAZ_FIRE_MODIFIER_DESC,
     "effect": "LPF ADD_ITEM_EFFECT INT_VAR type = 1 opcode = 12 target = 2 parameter1 = 2 parameter2 = 0x80000 timing = 1 resist_dispel = 1 probability1 = 100 END",
@@ -537,8 +529,8 @@ def generate_weapons(items_tpa_fh, items_tra_fh, taerom_d_fh, thalan_d_fh, halba
   # Create the "masterwork" weapons that are forged by Taerom
   for i, weapon_type in enumerate(WEAPON_TYPES):
     wpm = weapon_plus_modifier(weapon_type, EMPTY_MODIFIER)
-    write_taerom_dlg(taerom_d_fh, weapon_type["itm_file_prefix"], weapon_type["lc_name"], weapon_type["say_idx"])
-    write_item_tpa(items_tpa_fh, weapon_type["itm_file_prefix"], "001", item_name_idx, item_name_idx + 1, wpm)
+    write_taerom_dlg(taerom_d_fh, wpm["itm_file_prefix"], wpm["lc_name"], wpm["say_idx"])
+    write_item_tpa(items_tpa_fh, wpm["itm_file_prefix"], "001", item_name_idx, item_name_idx + 1, wpm)
     write_item_tra(items_tra_fh, item_name_idx, item_name_idx + 1, wpm)
     item_name_idx += 2
 
@@ -549,9 +541,9 @@ def generate_weapons(items_tpa_fh, items_tra_fh, taerom_d_fh, thalan_d_fh, halba
 
     for j, weapon_type in enumerate(WEAPON_TYPES):
       wpm = weapon_plus_modifier(weapon_type, modifier)
-      write_item_tpa(items_tpa_fh, weapon_type["itm_file_prefix"], modifier["suffix"], item_name_idx, item_name_idx + 1, wpm)
+      write_item_tpa(items_tpa_fh, wpm["itm_file_prefix"], wpm["suffix"], item_name_idx, item_name_idx + 1, wpm)
       write_item_tra(items_tra_fh, item_name_idx, item_name_idx + 1, wpm)
-      write_thalan_dlg(thalan_d_fh, weapon_type["itm_file_prefix"], modifier["suffix"])
+      write_thalan_dlg(thalan_d_fh, wpm["itm_file_prefix"], wpm["suffix"])
       item_name_idx += 2
 
     thalan_d_fh.write("  IF ~!PartyGoldGT(1999)~ THEN REPLY @2017 GOTO cu#tha_lack_funds\n")
@@ -564,9 +556,9 @@ def generate_weapons(items_tpa_fh, items_tra_fh, taerom_d_fh, thalan_d_fh, halba
   for i, modifier in enumerate(HALBAZ_MODIFIERS):
     for j, weapon_type in enumerate(WEAPON_TYPES):
       wpm = weapon_plus_modifier(weapon_type, modifier)
-      write_item_tpa(items_tpa_fh, weapon_type["itm_file_prefix"], modifier["suffix"], item_name_idx, item_name_idx + 1, wpm)
+      write_item_tpa(items_tpa_fh, wpm["itm_file_prefix"], wpm["suffix"], item_name_idx, item_name_idx + 1, wpm)
       write_item_tra(items_tra_fh, item_name_idx, item_name_idx + 1, wpm)
-      write_halbaz_dlg(halbaz_d_fh, weapon_type["itm_file_prefix"], modifier["prev_suffix"], modifier["suffix"])
+      write_halbaz_dlg(halbaz_d_fh, wpm["itm_file_prefix"], wpm["prev_suffix"], wpm["suffix"])
       item_name_idx += 2
   halbaz_d_fh.write("  IF ~!PartyGoldGT(3999)~ THEN REPLY @3007 GOTO cu#hal_lack_funds\n")
   halbaz_d_fh.write("  IF ~~ THEN REPLY @3008 EXIT\n")

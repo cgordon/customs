@@ -1,4 +1,12 @@
+/*
+ * Thalantyr has a couple grumpy starting conversations, the first of which is gated by the
+ * "RumorTalkThalan" global. This extends the top of state 1 to include transitions for asking
+ * Thalantyr to imbue the player's masterwork weapon from Taerom.
+ */
 EXTEND_TOP THALAN 1 #1
+  // If the player has already assuaged Thalantyr's ego, but does not have a weapon from Taerom,
+  // Thalantyr will tell them that he doesn't see a weapon worth imbuing, and hints that Taerom
+  // could make them one.
   IF ~Global("RumorTalkThalan", "GLOBAL", 1)
       Global("cu#tha_imbue", "GLOBAL", 0)
       !PartyHasItem("CU#2H001")
@@ -19,6 +27,9 @@ EXTEND_TOP THALAN 1 #1
       !PartyHasItem("CU#SS001")
       !PartyHasItem("CU#WH001")
       !PartyHasItem("CU#WZ001")~ THEN REPLY @2001 GOTO cu#tha_no_weapon
+
+  // If the player has already assuaged Thalantyr's ego, and has a weapon from Taerom,
+  // Thalantyr will offer to imbue it with an elemental damage of the player's choice.
   IF ~Global("RumorTalkThalan", "GLOBAL", 1)
       Global("cu#tha_imbue", "GLOBAL", 0)
       OR(18) PartyHasItem("CU#2H001")
@@ -41,6 +52,10 @@ EXTEND_TOP THALAN 1 #1
              PartyHasItem("CU#WZ001")~ THEN REPLY @2003 GOTO cu#tha_elem_dmg
 END
 
+/*
+ * State 2 is similar to state 1, but does not need to be guarded by the RumorTalkThalan
+ * global variable, so this is just a repeat of the above transitions without that guard.
+ */
 EXTEND_TOP THALAN 2 #1
   IF ~Global("cu#tha_imbue", "GLOBAL", 0)
       !PartyHasItem("CU#2H001")
@@ -84,11 +99,18 @@ END
 
 APPEND THALAN
 
+/*
+ * Thalantyr notes that the player does not have a weapon that he can imbue, and recommends
+ * talking to Taerom about it.
+ */
 IF ~~ THEN BEGIN cu#tha_no_weapon
   SAY @2002
   IF ~~ THEN DO ~~ EXIT
 END
 
+/*
+ * Thalantyr provides a menu of elemental damage types from which the player may select.
+ */
 IF ~~ THEN BEGIN cu#tha_elem_dmg
   SAY @2006
   IF ~~ THEN REPLY @2007 GOTO cu#tha_acid_dmg
@@ -98,6 +120,9 @@ IF ~~ THEN BEGIN cu#tha_elem_dmg
   IF ~~ THEN REPLY @2005 EXIT
 END
 
+/*
+ * Thalantyr tells the player to get richer.
+ */
 IF ~~ THEN BEGIN cu#tha_lack_funds
   SAY @2011
   IF ~~ THEN DO ~~ EXIT

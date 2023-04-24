@@ -1,6 +1,8 @@
 Sword Coast Customs
+===================
 
-# About
+About
+-----
 
 Baldur's Gate has two powerful weapons with elemental damage enchantments: the longsword Varscona and the war
 hammer Ashideena. That makes long swords and war hammers two of the best proficiencies in the game, and makes
@@ -12,14 +14,16 @@ player to create a halberd that does frost damage, or a ninja-to with acid damag
 additional component that is optional, but highly recommended to remove or relocate Ashideena and Varscona, so
 that the additional of another elemental damaage weapon doesn't unbalance the game.
 
-# Installation
+Installation
+------------
 
-Sword Coast Customs makes use of Weidu for installation, and there is an excellent overview on the Baldur's Gate forums
-for how to install mods into Baldur's Gate:
+Sword Coast Customs makes use of Weidu for installation, and there is an excellent overview on the Baldur's Gate
+forums for how to install mods into Baldur's Gate:
 
   https://forums.beamdog.com/discussion/82840/a-new-player-s-guide-to-installing-and-playing-mods
 
-# Compatibility
+Compatibility
+-------------
 
 This mod has only been tested with Baldur's Gate: Enhanced Edition 2.6.6 in a vanilla installation. I have made every
 attempt to keep the installation minimally invasive, but it is likely that the mod will not work correctly for non-EE
@@ -27,31 +31,35 @@ versions of the game.
 
 There is no content in this mod for Baldur's Gate II or Throne of Bhaal.
 
-# Components
+Components
+----------
 
-## Core Component
+1. Core Component
 
 The core component makes these modifications:
 
-1. Taerom Fuiruim, at the Thunderhammer Smithy in Beregost, will offer to craft the player a masterwork weapon after they have suitably impressed him.
-2. Thalantyr, at the High Hedge west of Beregost, will be able to imbue the masterwork weapon with elemental damage (a +1 enchantment bonus).
-3. Halbazzer Drin, at Sorcerous Sundries in Baldur's Gate, will be able to enhance the weapon (a +2 enchantment bonus).
+  1. Taerom Fuiruim, at the Thunderhammer Smithy in Beregost, will offer to craft the player a masterwork weapon after
+     they have suitably impressed him.
+  2. Thalantyr, at the High Hedge west of Beregost, will be able to imbue the masterwork weapon with elemental damage
+     (a +1 enchantment bonus).
+  3. Halbazzer Drin, at Sorcerous Sundries in Baldur's Gate, will be able to enhance the weapon (a +2 enchantment bonus).
 
 Taerom will only craft melee weapons, so slings, short bows, long bows, crossbows and darts are not available. The mod
 will install new artwork for the weapons (18 masterwork weapons, 4 of each at +1 enchantment, 4 of each at +2 enchantment,
 so 162 total weapons).
 
-## Remove or relocate Ashideena
+2. Remove or relocate Ashideena
 
-This optional, but recommended, component will either remove Ashideena from the game, or relocate it to a more suitable
+This optional (but recommended) component will either remove Ashideena from the game, or relocate it to a more suitable
 place later in the game. Bassilus will have a War Hammer +1 instead of Ashideena in either case.
 
-## Remove or relocate Varscona
+3. Remove or relocate Varscona
 
 The same as the previous component, but for Varscona. This was kept separate so players can choose to retain one or the
 other of the existing elemental damage weapons alongside the custom item that can be created with this mod.
 
-# Acknowledgements
+Acknowledgements
+----------------
 
 The artwork for the items in the game was created by hephaestusart:
 

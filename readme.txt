@@ -2,11 +2,15 @@ Sword Coast Customs
 
 # About
 
-Baldur's Gate has two powerful weapons with elemental damage enchantments: Ashideena and Varscona. Both weapons are
-available early in the campaign and remain best-in-class until the end of the game. This mod allows the player to
-craft one equally powerful melee weapon with acid, electric, fire or frost damage, by working with Taerom at the
-Thunderhammer Smithy, Thalantyr at the High Hedge and Halbazzer at Sorcerous Sundries. Optionally, the mod will either
-remove Ashideena and Varscona from the game entirely, or move them to be found later in the game.
+Baldur's Gate has two powerful weapons with elemental damage enchantments: the longsword Varscona and the war
+hammer Ashideena. That makes long swords and war hammers two of the best proficiencies in the game, and makes
+it difficult to justify choosing other weapon proficiencies. The goal of this mod is to open up a wider range
+of weapon choices without breaking the difficulty curve of the game. It does that by allowing the player to
+commission a weapon from Taerom Fuiruim, at the Thunderhammer Smithy, and then to have that weapon imbued with
+elemental damage by Thalantyr, at the High Hedge, and Halbazzer, at Sorcerous Sundries. This will allow the
+player to create a halberd that does frost damage, or a ninja-to with acid damage, for example. There is an
+additional component that is optional, but highly recommended to remove or relocate Ashideena and Varscona, so
+that the additional of another elemental damaage weapon doesn't unbalance the game.
 
 # Installation
 
@@ -37,12 +41,15 @@ Taerom will only craft melee weapons, so slings, short bows, long bows, crossbow
 will install new artwork for the weapons (18 masterwork weapons, 4 of each at +1 enchantment, 4 of each at +2 enchantment,
 so 162 total weapons).
 
-## Remove or relocate Ashideena and Varscona
+## Remove or relocate Ashideena
 
-This is an optional component to remove or relocate Ashideena and Varscona to later in the game. It is already a little
-over-balanced to have two elemental weapons that early in the game, so adding a third may be seen as going too far. This
-gives the player the option to remove the existing elemental weapons entirely, so their new weapon reigns supreme, or to
-relocate the weapons into Baldur's Gate, so they appear at a more appropriate time in the development of the character.
+This optional, but recommended, component will either remove Ashideena from the game, or relocate it to a more suitable
+place later in the game. Bassilus will have a War Hammer +1 instead of Ashideena in either case.
+
+## Remove or relocate Varscona
+
+The same as the previous component, but for Varscona. This was kept separate so players can choose to retain one or the
+other of the existing elemental damage weapons alongside the custom item that can be created with this mod.
 
 # Acknowledgements
 
@@ -54,7 +61,7 @@ The items were created using NearInfinity:
 
   https://github.com/Argent77/NearInfinity
 
-The installation is done by Weidu, with thanks to Wisp, The Bigg and Westley Weimer:
+The installation is done by Weidu:
 
   https://weidu.org/~thebigg/README-WeiDU.html
 

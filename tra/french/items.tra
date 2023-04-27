@@ -1,0 +1,3619 @@
+@1 = ~La Résolution de <CHARNAME>~
+@2 = ~Ce cimeterre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 10 en Force~
+@3 = ~La Résolution de <CHARNAME>~
+@4 = ~Cette épée bâtarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 2d4 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 7
+Type de compétence : Épée bâtarde
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 11 en Force~
+@5 = ~La Résolution de <CHARNAME>~
+@6 = ~Cette épée à deux mains magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 9
+Type de compétence : Épée à deux mains
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 14 en Force~
+@7 = ~La Résolution de <CHARNAME>~
+@8 = ~Cette épée courte magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Épée courte
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@9 = ~La Résolution de <CHARNAME>~
+@10 = ~Ce ninjatō magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 5
+
+Nécessite : 
+- 6 en Force~
+@11 = ~La Résolution de <CHARNAME>~
+@12 = ~Ce wakizashi magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@13 = ~La Résolution de <CHARNAME>~
+@14 = ~Cette dague magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d4 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type : Arme à 1 main
+
+Poids : 1
+
+Nécessite : 
+- 3 en Force~
+@15 = ~La Résolution de <CHARNAME>~
+@16 = ~Ce marteau de guerre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d4 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 4
+Type de compétence : Marteau de guerre
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 9 en Force~
+@17 = ~La Résolution de <CHARNAME>~
+@18 = ~Ce gourdin magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Gourdin
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@19 = ~La Résolution de <CHARNAME>~
+@20 = ~Cette masse magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Masse d'armes
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 10 en Force~
+@21 = ~La Résolution de <CHARNAME>~
+@22 = ~Cette étoile du matin magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 2d4 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 12
+
+Nécessite : 
+- 11 en Force~
+@23 = ~La Résolution de <CHARNAME>~
+@24 = ~Ce fléau d'armes magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@25 = ~La Résolution de <CHARNAME>~
+@26 = ~Cette hache de bataille magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 6
+Type de compétence : Hache
+Type : Arme à 1 main
+
+Poids : 7
+
+Nécessite : 
+- 10 en Force~
+@27 = ~La Résolution de <CHARNAME>~
+@28 = ~Cette hallebarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Perforant / Tranchant
+Facteur de vitesse : 9
+Type de compétence : Hallebarde
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@29 = ~La Résolution de <CHARNAME>~
+@30 = ~Ce bâton de combat magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : Arme à 2 mains
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@31 = ~La Résolution de <CHARNAME>~
+@32 = ~Cette épée longue magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Épée longue
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@33 = ~La Résolution de <CHARNAME>~
+@34 = ~Ce katana magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Katana
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 6 en Force~
+@35 = ~La Résolution de <CHARNAME>~
+@36 = ~Cette lance magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+PARAMÈTRES : 
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 5
+Type de compétence : Lance
+Type : Arme à 2 mains
+
+Poids : 5
+
+Nécessite : 
+- 5 en Force~
+@37 = ~La Résolution de <CHARNAME>~
+@38 = ~Ce cimeterre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce cimeterre le pouvoir de geler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 10 en Force~
+@39 = ~La Résolution de <CHARNAME>~
+@40 = ~Cette épée bâtarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée bâtarde le pouvoir de geler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 2d4 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 7
+Type de compétence : Épée bâtarde
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 11 en Force~
+@41 = ~La Résolution de <CHARNAME>~
+@42 = ~Cette épée à deux mains magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée à deux mains le pouvoir de geler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 9
+Type de compétence : Épée à deux mains
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 14 en Force~
+@43 = ~La Résolution de <CHARNAME>~
+@44 = ~Cette épée courte magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée courte le pouvoir de geler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Épée courte
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@45 = ~La Résolution de <CHARNAME>~
+@46 = ~Ce ninjatō magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce ninjatō le pouvoir de geler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 5
+
+Nécessite : 
+- 6 en Force~
+@47 = ~La Résolution de <CHARNAME>~
+@48 = ~Ce wakizashi magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce wakizashi le pouvoir de geler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@49 = ~La Résolution de <CHARNAME>~
+@50 = ~Cette dague magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette dague le pouvoir de geler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d4 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type : Arme à 1 main
+
+Poids : 1
+
+Nécessite : 
+- 3 en Force~
+@51 = ~La Résolution de <CHARNAME>~
+@52 = ~Ce marteau de guerre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce marteau de guerre le pouvoir de geler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d4 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 4
+Type de compétence : Marteau de guerre
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 9 en Force~
+@53 = ~La Résolution de <CHARNAME>~
+@54 = ~Ce gourdin magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce gourdin le pouvoir de geler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Gourdin
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@55 = ~La Résolution de <CHARNAME>~
+@56 = ~Cette masse magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette masse le pouvoir de geler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Masse d'armes
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 10 en Force~
+@57 = ~La Résolution de <CHARNAME>~
+@58 = ~Cette étoile du matin magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette étoile du matin le pouvoir de geler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 2d4 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 12
+
+Nécessite : 
+- 11 en Force~
+@59 = ~La Résolution de <CHARNAME>~
+@60 = ~Ce fléau d'armes magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce fléau d'armes le pouvoir de geler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@61 = ~La Résolution de <CHARNAME>~
+@62 = ~Cette hache de bataille magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hache de bataille le pouvoir de geler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 6
+Type de compétence : Hache
+Type : Arme à 1 main
+
+Poids : 7
+
+Nécessite : 
+- 10 en Force~
+@63 = ~La Résolution de <CHARNAME>~
+@64 = ~Cette hallebarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hallebarde le pouvoir de geler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Perforant / Tranchant
+Facteur de vitesse : 9
+Type de compétence : Hallebarde
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@65 = ~La Résolution de <CHARNAME>~
+@66 = ~Ce bâton de combat magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce bâton de combat le pouvoir de geler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : Arme à 2 mains
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@67 = ~La Résolution de <CHARNAME>~
+@68 = ~Cette épée longue magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée longue le pouvoir de geler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Épée longue
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@69 = ~La Résolution de <CHARNAME>~
+@70 = ~Ce katana magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce katana le pouvoir de geler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Katana
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 6 en Force~
+@71 = ~La Résolution de <CHARNAME>~
+@72 = ~Cette lance magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette lance le pouvoir de geler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de froid à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 5
+Type de compétence : Lance
+Type : Arme à 2 mains
+
+Poids : 5
+
+Nécessite : 
+- 5 en Force~
+@73 = ~La Résolution de <CHARNAME>~
+@74 = ~Ce cimeterre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce cimeterre un pouvoir corrosif sur tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 10 en Force~
+@75 = ~La Résolution de <CHARNAME>~
+@76 = ~Cette épée bâtarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée bâtarde un pouvoir corrosif sur tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 2d4 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 7
+Type de compétence : Épée bâtarde
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 11 en Force~
+@77 = ~La Résolution de <CHARNAME>~
+@78 = ~Cette épée à deux mains magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée à deux mains un pouvoir corrosif sur tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 9
+Type de compétence : Épée à deux mains
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 14 en Force~
+@79 = ~La Résolution de <CHARNAME>~
+@80 = ~Cette épée courte magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée courte un pouvoir corrosif sur tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Épée courte
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@81 = ~La Résolution de <CHARNAME>~
+@82 = ~Ce ninjatō magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce ninjatō un pouvoir corrosif sur tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 5
+
+Nécessite : 
+- 6 en Force~
+@83 = ~La Résolution de <CHARNAME>~
+@84 = ~Ce wakizashi magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce wakizashi un pouvoir corrosif sur tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@85 = ~La Résolution de <CHARNAME>~
+@86 = ~Cette dague magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette dague un pouvoir corrosif sur tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d4 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type : Arme à 1 main
+
+Poids : 1
+
+Nécessite : 
+- 3 en Force~
+@87 = ~La Résolution de <CHARNAME>~
+@88 = ~Ce marteau de guerre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce marteau de guerre un pouvoir corrosif sur tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d4 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 4
+Type de compétence : Marteau de guerre
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 9 en Force~
+@89 = ~La Résolution de <CHARNAME>~
+@90 = ~Ce gourdin magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce gourdin un pouvoir corrosif sur tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Gourdin
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@91 = ~La Résolution de <CHARNAME>~
+@92 = ~Cette masse magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette masse un pouvoir corrosif sur tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Masse d'armes
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 10 en Force~
+@93 = ~La Résolution de <CHARNAME>~
+@94 = ~Cette étoile du matin magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette étoile du matin un pouvoir corrosif sur tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 2d4 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 12
+
+Nécessite : 
+- 11 en Force~
+@95 = ~La Résolution de <CHARNAME>~
+@96 = ~Ce fléau d'armes magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce fléau d'armes un pouvoir corrosif sur tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@97 = ~La Résolution de <CHARNAME>~
+@98 = ~Cette hache de bataille magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hache de bataille un pouvoir corrosif sur tout ce qu'elle atteint.
+
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 6
+Type de compétence : Hache
+Type : Arme à 1 main
+
+Poids : 7
+
+Nécessite : 
+- 10 en Force~
+@99 = ~La Résolution de <CHARNAME>~
+@100 = ~Cette hallebarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hallebarde un pouvoir corrosif sur tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Perforant / Tranchant
+Facteur de vitesse : 9
+Type de compétence : Hallebarde
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@101 = ~La Résolution de <CHARNAME>~
+@102 = ~Ce bâton de combat magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce bâton de combat un pouvoir corrosif sur tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : Arme à 2 mains
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@103 = ~La Résolution de <CHARNAME>~
+@104 = ~Cette épée longue magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée longue un pouvoir corrosif sur tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Épée longue
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@105 = ~La Résolution de <CHARNAME>~
+@106 = ~Ce katana magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce katana un pouvoir corrosif sur tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Katana
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 6 en Force~
+@107 = ~La Résolution de <CHARNAME>~
+@108 = ~Cette lance magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette lance un pouvoir corrosif sur tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'acide à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 5
+Type de compétence : Lance
+Type : Arme à 2 mains
+
+Poids : 5
+
+Nécessite : 
+- 5 en Force~
+@109 = ~La Résolution de <CHARNAME>~
+@110 = ~Ce cimeterre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce cimeterre le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 10 en Force~
+@111 = ~La Résolution de <CHARNAME>~
+@112 = ~Cette épée bâtarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée bâtarde le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 2d4 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 7
+Type de compétence : Épée bâtarde
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 11 en Force~
+@113 = ~La Résolution de <CHARNAME>~
+@114 = ~Cette épée à deux mains magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée à deux mains le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 9
+Type de compétence : Épée à deux mains
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 14 en Force~
+@115 = ~La Résolution de <CHARNAME>~
+@116 = ~Cette épée courte magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée courte le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Épée courte
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@117 = ~La Résolution de <CHARNAME>~
+@118 = ~Ce ninjatō magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce ninjatō le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 5
+
+Nécessite : 
+- 6 en Force~
+@119 = ~La Résolution de <CHARNAME>~
+@120 = ~Ce wakizashi magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce wakizashi le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@121 = ~La Résolution de <CHARNAME>~
+@122 = ~Cette dague magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette dague le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d4 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type : Arme à 1 main
+
+Poids : 1
+
+Nécessite : 
+- 3 en Force~
+@123 = ~La Résolution de <CHARNAME>~
+@124 = ~Ce marteau de guerre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce marteau de guerre le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d4 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 4
+Type de compétence : Marteau de guerre
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 9 en Force~
+@125 = ~La Résolution de <CHARNAME>~
+@126 = ~Ce gourdin magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce gourdin le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Gourdin
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@127 = ~La Résolution de <CHARNAME>~
+@128 = ~Cette masse magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette masse le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Masse d'armes
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 10 en Force~
+@129 = ~La Résolution de <CHARNAME>~
+@130 = ~Cette étoile du matin magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette étoile du matin le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 2d4 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 12
+
+Nécessite : 
+- 11 en Force~
+@131 = ~La Résolution de <CHARNAME>~
+@132 = ~Ce fléau d'armes magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce fléau d'armes le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@133 = ~La Résolution de <CHARNAME>~
+@134 = ~Cette hache de bataille magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hache de bataille le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 6
+Type de compétence : Hache
+Type : Arme à 1 main
+
+Poids : 7
+
+Nécessite : 
+- 10 en Force~
+@135 = ~La Résolution de <CHARNAME>~
+@136 = ~Cette hallebarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hallebarde le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Perforant / Tranchant
+Facteur de vitesse : 9
+Type de compétence : Hallebarde
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@137 = ~La Résolution de <CHARNAME>~
+@138 = ~Ce bâton de combat magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce bâton de combat le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : Arme à 2 mains
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@139 = ~La Résolution de <CHARNAME>~
+@140 = ~Cette épée longue magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée longue le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Épée longue
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@141 = ~La Résolution de <CHARNAME>~
+@142 = ~Ce katana magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce katana  le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Katana
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 6 en Force~
+@143 = ~La Résolution de <CHARNAME>~
+@144 = ~Cette lance magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette lance le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts d'électricité à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 5
+Type de compétence : Lance
+Type : Arme à 2 mains
+
+Poids : 5
+
+Nécessite : 
+- 5 en Force~
+@145 = ~La Résolution de <CHARNAME>~
+@146 = ~Ce cimeterre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce cimeterre le pouvoir de brûler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 10 en Force~
+@147 = ~La Résolution de <CHARNAME>~
+@148 = ~Cette épée bâtarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée bâtarde le pouvoir de brûler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 2d4 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 7
+Type de compétence : Épée bâtarde
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 11 en Force~
+@149 = ~La Résolution de <CHARNAME>~
+@150 = ~Cette épée à deux mains magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée à deux mains le pouvoir de brûler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 9
+Type de compétence : Épée à deux mains
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 14 en Force~
+@151 = ~La Résolution de <CHARNAME>~
+@152 = ~Cette épée courte magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée courte le pouvoir de brûler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Épée courte
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@153 = ~La Résolution de <CHARNAME>~
+@154 = ~Ce ninjatō magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce ninjatō le pouvoir de brûler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 5
+
+Nécessite : 
+- 6 en Force~
+@155 = ~La Résolution de <CHARNAME>~
+@156 = ~Ce wakizashi magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce wakizashi le pouvoir de brûler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@157 = ~La Résolution de <CHARNAME>~
+@158 = ~Cette dague magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette dague le pouvoir de brûler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d4 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type : Arme à 1 main
+
+Poids : 1
+
+Nécessite : 
+- 3 en Force~
+@159 = ~La Résolution de <CHARNAME>~
+@160 = ~Ce marteau de guerre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce marteau de guerre le pouvoir de brûler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d4 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 4
+Type de compétence : Marteau de guerre
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 9 en Force~
+@161 = ~La Résolution de <CHARNAME>~
+@162 = ~Ce gourdin magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce gourdin le pouvoir de brûler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Gourdin
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@163 = ~La Résolution de <CHARNAME>~
+@164 = ~Cette masse magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette masse le pouvoir de brûler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Masse d'armes
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 10 en Force~
+@165 = ~La Résolution de <CHARNAME>~
+@166 = ~Cette étoile du matin magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette étoile du matin le pouvoir de brûler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 2d4 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 12
+
+Nécessite : 
+- 11 en Force~
+@167 = ~La Résolution de <CHARNAME>~
+@168 = ~Ce fléau d'armes magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce fléau d'armes le pouvoir de brûler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@169 = ~La Résolution de <CHARNAME>~
+@170 = ~Cette hache de bataille magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hache de bataille le pouvoir de brûler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 6
+Type de compétence : Hache
+Type : Arme à 1 main
+
+Poids : 7
+
+Nécessite : 
+- 10 en Force~
+@171 = ~La Résolution de <CHARNAME>~
+@172 = ~Cette hallebarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hallebarde le pouvoir de brûler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Perforant / Tranchant
+Facteur de vitesse : 9
+Type de compétence : Hallebarde
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@173 = ~La Résolution de <CHARNAME>~
+@174 = ~Ce bâton de combat magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce bâton de combat le pouvoir de brûler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : Arme à 2 mains
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@175 = ~La Résolution de <CHARNAME>~
+@176 = ~Cette épée longue magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée longue le pouvoir de brûler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d8 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Épée longue
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@177 = ~La Résolution de <CHARNAME>~
+@178 = ~Ce katana magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce katana le pouvoir de brûler tout ce qu'il atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d10 +1
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Katana
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 6 en Force~
+@179 = ~La Résolution de <CHARNAME>~
+@180 = ~Cette lance magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette lance le pouvoir de brûler tout ce qu'elle atteint.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 1 points de dégâts de feu à la cible
+
+Enchantement : +1
+TAC0 : +1
+Dégâts : 1d6 +1
+Type de dégâts : Perforant
+Facteur de vitesse : 5
+Type de compétence : Lance
+Type : Arme à 2 mains
+
+Poids : 5
+
+Nécessite : 
+- 5 en Force~
+@181 = ~La Résolution de <CHARNAME>~
+@182 = ~Ce cimeterre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce cimeterre le pouvoir de geler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 10 en Force~
+@183 = ~La Résolution de <CHARNAME>~
+@184 = ~Cette épée bâtarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée bâtarde le pouvoir de geler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 2d4 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 7
+Type de compétence : Épée bâtarde
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 11 en Force~
+@185 = ~La Résolution de <CHARNAME>~
+@186 = ~Cette épée à deux mains magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée à deux mains le pouvoir de geler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d10 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 9
+Type de compétence : Épée à deux mains
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 14 en Force~
+@187 = ~La Résolution de <CHARNAME>~
+@188 = ~Cette épée courte magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée courte le pouvoir de geler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Épée courte
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@189 = ~La Résolution de <CHARNAME>~
+@190 = ~Ce ninjatō magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce ninjatō le pouvoir de geler tout ce qu'il atteints, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 5
+
+Nécessite : 
+- 6 en Force~
+@191 = ~La Résolution de <CHARNAME>~
+@192 = ~Ce wakizashi magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce wakizashi le pouvoir de geler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@193 = ~La Résolution de <CHARNAME>~
+@194 = ~Cette dague magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette dague le pouvoir de geler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d4 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type : Arme à 1 main
+
+Poids : 1
+
+Nécessite : 
+- 3 en Force~
+@195 = ~La Résolution de <CHARNAME>~
+@196 = ~Ce marteau de guerre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce marteau de guerre le pouvoir de geler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d4 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 4
+Type de compétence : Marteau de guerre
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 9 en Force~
+@197 = ~La Résolution de <CHARNAME>~
+@198 = ~Ce gourdin magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce gourdin le pouvoir de geler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Gourdin
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@199 = ~La Résolution de <CHARNAME>~
+@200 = ~Cette masse magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette masse le pouvoir de geler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Masse d'armes
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 10 en Force~
+@201 = ~La Résolution de <CHARNAME>~
+@202 = ~Cette étoile du matin magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette étoile du matin le pouvoir de geler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 2d4 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 12
+
+Nécessite : 
+- 11 en Force~
+@203 = ~La Résolution de <CHARNAME>~
+@204 = ~Ce fléau d'armes magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce fléau d'armes le pouvoir de geler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@205 = ~La Résolution de <CHARNAME>~
+@206 = ~Cette hache de bataille magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hache de bataille le pouvoir de geler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 6
+Type de compétence : Hache
+Type : Arme à 1 main
+
+Poids : 7
+
+Nécessite : 
+- 10 en Force~
+@207 = ~La Résolution de <CHARNAME>~
+@208 = ~Cette hallebarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hallebarde le pouvoir de geler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d10 +2
+Type de dégâts : Perforant / Tranchant
+Facteur de vitesse : 9
+Type de compétence : Hallebarde
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@209 = ~La Résolution de <CHARNAME>~
+@210 = ~Ce bâton de combat magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce bâton de combat le pouvoir de geler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : Arme à 2 mains
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@211 = ~La Résolution de <CHARNAME>~
+@212 = ~Cette épée longue magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée longue le pouvoir de geler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Épée longue
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@213 = ~La Résolution de <CHARNAME>~
+@214 = ~Ce katana magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce katana le pouvoir de geler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d10 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Katana
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 6 en Force~
+@215 = ~La Résolution de <CHARNAME>~
+@216 = ~Cette lance magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette lance le pouvoir de geler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de froid à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 5
+Type de compétence : Lance
+Type : Arme à 2 mains
+
+Poids : 5
+
+Nécessite : 
+- 5 en Force~
+@217 = ~La Résolution de <CHARNAME>~
+@218 = ~Ce cimeterre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce cimeterre un pouvoir corrosif sur tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 10 en Force~
+@219 = ~La Résolution de <CHARNAME>~
+@220 = ~Cette épée bâtarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée bâtarde un pouvoir corrosif sur tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 2d4 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 7
+Type de compétence : Épée bâtarde
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 11 en Force~
+@221 = ~La Résolution de <CHARNAME>~
+@222 = ~Cette épée à deux mains magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée à deux mains un pouvoir corrosif sur tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d10 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 9
+Type de compétence : Épée à deux mains
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 14 en Force~
+@223 = ~La Résolution de <CHARNAME>~
+@224 = ~Cette épée courte magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée courte un pouvoir corrosif sur tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Épée courte
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@225 = ~La Résolution de <CHARNAME>~
+@226 = ~Ce ninjatō magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce ninjatō un pouvoir corrosif sur tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 5
+
+Nécessite : 
+- 6 en Force~
+@227 = ~La Résolution de <CHARNAME>~
+@228 = ~Ce wakizashi magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce wakizashi un pouvoir corrosif sur tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@229 = ~La Résolution de <CHARNAME>~
+@230 = ~Cette dague magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette dague un pouvoir corrosif sur tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d4 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type : Arme à 1 main
+
+Poids : 1
+
+Nécessite : 
+- 3 en Force~
+@231 = ~La Résolution de <CHARNAME>~
+@232 = ~Ce marteau de guerre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce marteau de guerre un pouvoir corrosif sur tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d4 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 4
+Type de compétence : Marteau de guerre
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 9 en Force~
+@233 = ~La Résolution de <CHARNAME>~
+@234 = ~Ce gourdin magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce gourdin un pouvoir corrosif sur tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Gourdin
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@235 = ~La Résolution de <CHARNAME>~
+@236 = ~Cette masse magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette masse un pouvoir corrosif sur tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Masse d'armes
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 10 en Force~
+@237 = ~La Résolution de <CHARNAME>~
+@238 = ~Cette étoile du matin magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette étoile du matin un pouvoir corrosif sur tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 2d4 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 12
+
+Nécessite : 
+- 11 en Force~
+@239 = ~La Résolution de <CHARNAME>~
+@240 = ~Ce fléau d'armes magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce fléau d'armes un pouvoir corrosif sur tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@241 = ~La Résolution de <CHARNAME>~
+@242 = ~Cette hache de bataille magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hache de bataille un pouvoir corrosif sur tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 6
+Type de compétence : Hache
+Type : Arme à 1 main
+
+Poids : 7
+
+Nécessite : 
+- 10 en Force~
+@243 = ~La Résolution de <CHARNAME>~
+@244 = ~Cette hallebarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hallebarde un pouvoir corrosif sur tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d10 +2
+Type de dégâts : Perforant / Tranchant
+Facteur de vitesse : 9
+Type de compétence : Hallebarde
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@245 = ~La Résolution de <CHARNAME>~
+@246 = ~Ce bâton de combat magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce bâton de combat un pouvoir corrosif sur tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : Arme à 2 mains
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@247 = ~La Résolution de <CHARNAME>~
+@248 = ~Cette épée longue magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée longue un pouvoir corrosif sur tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Épée longue
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@249 = ~La Résolution de <CHARNAME>~
+@250 = ~Ce katana magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce katana un pouvoir corrosif sur tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d10 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Katana
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 6 en Force~
+@251 = ~La Résolution de <CHARNAME>~
+@252 = ~Cette lance magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette lance un pouvoir corrosif sur tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'acide à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 5
+Type de compétence : Lance
+Type : Arme à 2 mains
+
+Poids : 5
+
+Nécessite : 
+- 5 en Force~
+@253 = ~La Résolution de <CHARNAME>~
+@254 = ~Ce cimeterre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce cimeterre le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 10 en Force~
+@255 = ~La Résolution de <CHARNAME>~
+@256 = ~Cette épée bâtarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée bâtarde le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 2d4 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 7
+Type de compétence : Épée bâtarde
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 11 en Force~
+@257 = ~La Résolution de <CHARNAME>~
+@258 = ~Cette épée à deux mains magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée à deux mains le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d10 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 9
+Type de compétence : Épée à deux mains
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 14 en Force~
+@259 = ~La Résolution de <CHARNAME>~
+@260 = ~Cette épée courte magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée courte le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Épée courte
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@261 = ~La Résolution de <CHARNAME>~
+@262 = ~Ce ninjatō magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce ninjatō le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 5
+
+Nécessite : 
+- 6 en Force~
+@263 = ~La Résolution de <CHARNAME>~
+@264 = ~Ce wakizashi magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce wakizashi le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@265 = ~La Résolution de <CHARNAME>~
+@266 = ~Cette dague magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette dague le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d4 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type : Arme à 1 main
+
+Poids : 1
+
+Nécessite : 
+- 3 en Force~
+@267 = ~La Résolution de <CHARNAME>~
+@268 = ~Ce marteau de guerre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce marteau de guerre le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d4 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 4
+Type de compétence : Marteau de guerre
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 9 en Force~
+@269 = ~La Résolution de <CHARNAME>~
+@270 = ~Ce gourdin magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce gourdin le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Gourdin
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@271 = ~La Résolution de <CHARNAME>~
+@272 = ~Cette masse magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette masse le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Masse d'armes
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 10 en Force~
+@273 = ~La Résolution de <CHARNAME>~
+@274 = ~Cette étoile du matin magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette étoile du matin le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 2d4 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 12
+
+Nécessite : 
+- 11 en Force~
+@275 = ~La Résolution de <CHARNAME>~
+@276 = ~Ce fléau d'armes magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce fléau d'armes le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@277 = ~La Résolution de <CHARNAME>~
+@278 = ~Cette hache de bataille magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hache de bataille le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 6
+Type de compétence : Hache
+Type : Arme à 1 main
+
+Poids : 7
+
+Nécessite : 
+- 10 en Force~
+@279 = ~La Résolution de <CHARNAME>~
+@280 = ~Cette hallebarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hallebarde le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d10 +2
+Type de dégâts : Perforant / Tranchant
+Facteur de vitesse : 9
+Type de compétence : Hallebarde
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@281 = ~La Résolution de <CHARNAME>~
+@282 = ~Ce bâton de combat magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce bâton de combat le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : Arme à 2 mains
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@283 = ~La Résolution de <CHARNAME>~
+@284 = ~Cette épée longue magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée longue le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Épée longue
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@285 = ~La Résolution de <CHARNAME>~
+@286 = ~Ce katana magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce katana  le pouvoir d'infliger une décharge électrique à tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d10 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Katana
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 6 en Force~
+@287 = ~La Résolution de <CHARNAME>~
+@288 = ~Cette lance magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette lance le pouvoir d'infliger une décharge électrique à tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 5
+Type de compétence : Lance
+Type : Arme à 2 mains
+
+Poids : 5
+
+Nécessite : 
+- 5 en Force~
+@289 = ~La Résolution de <CHARNAME>~
+@290 = ~Ce cimeterre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce cimeterre le pouvoir de brûler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 10 en Force~
+@291 = ~La Résolution de <CHARNAME>~
+@292 = ~Cette épée bâtarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée bâtarde le pouvoir de brûler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 2d4 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 7
+Type de compétence : Épée bâtarde
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 11 en Force~
+@293 = ~La Résolution de <CHARNAME>~
+@294 = ~Cette épée à deux mains magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée à deux mains le pouvoir de brûler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d10 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 9
+Type de compétence : Épée à deux mains
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 14 en Force~
+@295 = ~La Résolution de <CHARNAME>~
+@296 = ~Cette épée courte magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée courte le pouvoir de brûler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Épée courte
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@297 = ~La Résolution de <CHARNAME>~
+@298 = ~Ce ninjatō magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce ninjatō le pouvoir de brûler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 5
+
+Nécessite : 
+- 6 en Force~
+@299 = ~La Résolution de <CHARNAME>~
+@300 = ~Ce wakizashi magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce wakizashi le pouvoir de brûler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 2
+Type de compétence : Cimeterre / Wakizashi / Ninjatō
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@301 = ~La Résolution de <CHARNAME>~
+@302 = ~Cette dague magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette dague le pouvoir de brûler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d4 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 1
+Type de compétence : Dague
+Type : Arme à 1 main
+
+Poids : 1
+
+Nécessite : 
+- 3 en Force~
+@303 = ~La Résolution de <CHARNAME>~
+@304 = ~Ce marteau de guerre magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce marteau de guerre le pouvoir de brûler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d4 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 4
+Type de compétence : Marteau de guerre
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 9 en Force~
+@305 = ~La Résolution de <CHARNAME>~
+@306 = ~Ce gourdin magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce gourdin le pouvoir de brûler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Gourdin
+Type : Arme à 1 main
+
+Poids : 3
+
+Nécessite : 
+- 5 en Force~
+@307 = ~La Résolution de <CHARNAME>~
+@308 = ~Cette masse magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette masse le pouvoir de brûler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Masse d'armes
+Type : Arme à 1 main
+
+Poids : 10
+
+Nécessite : 
+- 10 en Force~
+@309 = ~La Résolution de <CHARNAME>~
+@310 = ~Cette étoile du matin magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette étoile du matin le pouvoir de brûler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 2d4 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 12
+
+Nécessite : 
+- 11 en Force~
+@311 = ~La Résolution de <CHARNAME>~
+@312 = ~Ce fléau d'armes magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce fléau d'armes le pouvoir de brûler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +3
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / Morgenstern
+Type : Arme à 1 main
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@313 = ~La Résolution de <CHARNAME>~
+@314 = ~Cette hache de bataille magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hache de bataille le pouvoir de brûler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 6
+Type de compétence : Hache
+Type : Arme à 1 main
+
+Poids : 7
+
+Nécessite : 
+- 10 en Force~
+@315 = ~La Résolution de <CHARNAME>~
+@316 = ~Cette hallebarde magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette hallebarde le pouvoir de brûler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d10 +2
+Type de dégâts : Perforant / Tranchant
+Facteur de vitesse : 9
+Type de compétence : Hallebarde
+Type : Arme à 2 mains
+
+Poids : 15
+
+Nécessite : 
+- 13 en Force~
+@317 = ~La Résolution de <CHARNAME>~
+@318 = ~Ce bâton de combat magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce bâton de combat le pouvoir de brûler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Contondant
+Facteur de vitesse : 3
+Type de compétence : Bâton
+Type : Arme à 2 mains
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@319 = ~La Résolution de <CHARNAME>~
+@320 = ~Cette épée longue magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette épée longue le pouvoir de brûler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d8 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 4
+Type de compétence : Épée longue
+Type : Arme à 1 main
+
+Poids : 4
+
+Nécessite : 
+- 5 en Force~
+@321 = ~La Résolution de <CHARNAME>~
+@322 = ~Ce katana magistralement forgé par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibré pour <CHARNAME>, il a été conçu avec des matériaux de haute qualité et soigneusement élaboré pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à ce katana le pouvoir de brûler tout ce qu'il atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d10 +2
+Type de dégâts : Tranchant
+Facteur de vitesse : 3
+Type de compétence : Katana
+Type : Arme à 1 main
+
+Poids : 6
+
+Nécessite : 
+- 6 en Force~
+@323 = ~La Résolution de <CHARNAME>~
+@324 = ~Cette lance magistralement forgée par le célèbre forgeron Taërom Fuiruim dans la forge de « Grondemarteau » à Bérégost est parfaitement équilibrée pour <CHARNAME>, elle a été conçue avec des matériaux de haute qualité et soigneusement élaborée pour endurer un maniement intensif.
+
+Thalantyr le mage de Haute-Haie a conféré à cette lance le pouvoir de brûler tout ce qu'elle atteint, Toubazar Drin, le haut mage a amplifié son efficacité.
+
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inflige 2 points de dégâts de feu à la cible
+
+Enchantement : +2
+TAC0 : +2
+Dégâts : 1d6 +2
+Type de dégâts : Perforant
+Facteur de vitesse : 5
+Type de compétence : Lance
+Type : Arme à 2 mains
+
+Poids : 5
+
+Nécessite : 
+- 5 en Force~

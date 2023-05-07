@@ -1,0 +1,8 @@
+DEFINE_PATCH_FUNCTION renumber_2da
+BEGIN
+  COUNT_2DA_COLS num_cols
+  COUNT_2DA_ROWS num_cols num_rows
+  FOR (i=1;  i<num_rows; i+=1) BEGIN
+    SET_2DA_ENTRY i 0 num_cols ~%i%~
+  END
+END

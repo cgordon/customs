@@ -15,6 +15,11 @@ LANGUAGE
 LANGUAGE
     ~Français~
     ~french~
+    ~customs/tra/english/items.tra~
+    ~customs/tra/english/setup.tra~
+    ~customs/tra/english/taerom.tra~
+    ~customs/tra/english/thalan.tra~
+    ~customs/tra/english/halbaz.tra~
     ~customs/tra/french/items.tra~
     ~customs/tra/french/setup.tra~
     ~customs/tra/french/taerom.tra~

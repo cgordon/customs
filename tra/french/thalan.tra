@@ -1,0 +1,23 @@
+@2001 = ~Est-il possible de conférer des propriétés magiques à une arme afin de m'aider au cours des batailles ?~
+
+@2002 = ~Sans arme susceptible d'être enchantée, je ne peux rien faire pour vous. Peut-être pourriez-vous convaincre Taërom Fuiruim de vous forger une telle arme. En attendant, excusez-moi, mais j'ai des préoccupations bien plus urgentes à régler.~
+
+@2003 = ~Taërom m'a façonné une arme magnifique. Seriez-vous capable de lui insuffler des propriétés magiques ?~
+@2005 = ~Laissez tomber, j'ai changé d'avis.~
+
+@2006 = ~Je peux imprégner votre arme avec de l'acide, du feu, du froid ou une charge électrique. Une fois enchantée, lorsque cette arme atteindra l'un de vos ennemis, elle infligera des dégâts supplémentaires selon l'élément choisi.~
+
+@2007 = ~L'acide me parait tout indiqué.~
+@2008 = ~Le froid a ma préférence.~
+@2009 = ~Le feu sera le plus utile.~
+@2010 = ~L’électricité devrait faire l'affaire.~
+
+@2011 = ~J'ai bien peur que votre budget ne soit pas à la hauteur de mes services, voyageur. Les enchantements que je propose sont de haute facture et empreints d'un immense pouvoir, raison pour laquelle ils coûtent une petite fortune. Je ne travaille pas pour de la petite monnaie ou de vulgaires breloques, car mes connaissances des arcanes sont à la fois inestimables et inégalées.~ ~J'ai bien peur que votre budget ne soit pas à la hauteur de mes services, voyageuse. Les enchantements que je propose sont de haute facture et empreints d'un immense pouvoir, raison pour laquelle ils coûtent une fortune. Je ne travaille pas pour de la petite monnaie ou de vulgaires breloques, car mes connaissances des arcanes sont à la fois inestimables et inégalées.~
+
+@2012 = ~Enchanter une arme avec un grand pouvoir n'est pas tâche aisée, cela requiert une vaste connaissance des arcanes et des matières élémentaires raffinées. Si vous recourez à mes services, il vous en coûtera 2 000 pièces d'or pour imprégner votre arme d'un froid glacial. Que décidez-vous ?~
+@2013 = ~Enchanter une arme avec un grand pouvoir n'est pas tâche aisée, cela requiert une vaste connaissance des arcanes et des matières élémentaires raffinées. Si vous recourez à mes services, il vous en coûtera 2 000 pièces d'or pour que votre arme soit imprégnée d'acide  . Que décidez-vous ?~
+@2014 = ~Enchanter une arme avec un grand pouvoir n'est pas tâche aisée, cela requiert une vaste connaissance des arcanes et des matières élémentaires raffinées. Si vous recourez à mes services, il vous en coûtera 2 000 pièces d'or pour que la foudre imprègne votre arme. Que décidez-vous ?~
+@2015 = ~Enchanter une arme avec un grand pouvoir n'est pas tâche aisée, cela requiert une vaste connaissance des arcanes et des matières élémentaires raffinées. Si vous recourez à mes services, il vous en coûtera 2 000 pièces d'or pour imprégner votre arme d'une flamme ardente. Que décidez-vous ?~
+
+@2016 = ~Oui, allons-y.~
+@2017 = ~Ma bourse n'est pas aussi garnie.~

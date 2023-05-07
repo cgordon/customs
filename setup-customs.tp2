@@ -11,6 +11,15 @@ LANGUAGE
     ~customs/tra/english/taerom.tra~
     ~customs/tra/english/thalan.tra~
     ~customs/tra/english/halbaz.tra~
+	
+LANGUAGE
+    ~Français~
+    ~french~
+    ~customs/tra/french/items.tra~
+    ~customs/tra/french/setup.tra~
+    ~customs/tra/french/taerom.tra~
+    ~customs/tra/french/thalan.tra~
+    ~customs/tra/french/halbaz.tra~
 
 /*
  * Core component: install weapons and dialog with Taerom, Thalantyr and Halbazzer

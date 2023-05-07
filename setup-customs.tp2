@@ -18,16 +18,24 @@ LANGUAGE
 
 BEGIN @9001
 
-COMPILE ~customs/dlg/taerom.d~
-COMPILE ~customs/dlg/thalan.d~
-COMPILE ~customs/dlg/halbaz.d~
 INCLUDE ~customs/lib/items.tpa~
+
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+  COMPILE ~customs/dlg/taerom.d~
+  COMPILE ~customs/dlg/thalan.d~
+  COMPILE ~customs/dlg/halbaz.d~
+END
+
+ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN
+  INCLUDE ~customs/lib/imports.tpa~
+END
 
 /*
  * Remove or relocate Ashideena: remove it from the game.
  */
 BEGIN @9003
 SUBCOMPONENT @9002
+REQUIRE_PREDICATE GAME_IS ~bgee~ @9008
 
 COPY_EXISTING ~BASSIL.CRE~ ~override~
   READ_LONG 0x2BC itemsoffset
@@ -46,6 +54,7 @@ BUT_ONLY
  */
 BEGIN @9004
 SUBCOMPONENT @9002
+REQUIRE_PREDICATE GAME_IS ~bgee~ @9008
 
 COPY_EXISTING ~BASSIL.CRE~ ~override~
   READ_LONG 0x2BC itemsoffset
@@ -70,6 +79,7 @@ BUT_ONLY
  */
 BEGIN @9006
 SUBCOMPONENT @9005
+REQUIRE_PREDICATE GAME_IS ~bgee~ @9008
 
 COPY_EXISTING ~GREYWO.CRE~ ~override~
   READ_LONG 0x2BC itemsoffset
@@ -88,6 +98,7 @@ BUT_ONLY
  */
 BEGIN @9007
 SUBCOMPONENT @9005
+REQUIRE_PREDICATE GAME_IS ~bgee~ @9008
 
 COPY_EXISTING ~GREYWO.CRE~ ~override~
   READ_LONG 0x2BC itemsoffset

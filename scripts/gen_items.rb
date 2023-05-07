@@ -523,7 +523,22 @@ def weapon_plus_modifier(weapon_type, modifier):
   return plus
 
 
-def generate_weapons(items_tpa_fh, items_tra_fh, taerom_d_fh, thalan_d_fh, halbaz_d_fh):
+def write_import_header(import_tra_fh):
+  import_tra_fh.write("INCLUDE ~customs/lib/2da.tpa~\n")
+  import_tra_fh.write("COPY_EXISTING ~IMPORT02.2DA~ ~override~\n")
+
+
+def write_import_footer(import_tra_fh):
+  import_tra_fh.write("  LPF renumber_2da END\n")
+  import_tra_fh.write("  PRETTY_PRINT_2DA\n")
+  import_tra_fh.write("BUT_ONLY\n")
+
+
+def write_import_itm(import_tra_fh, prefix, suffix):
+  import_tra_fh.write("  INSERT_2DA_ROW 1 2 ~1 %s%s~\n" % (prefix, suffix))
+
+
+def generate_weapons(items_tpa_fh, items_tra_fh, taerom_d_fh, thalan_d_fh, halbaz_d_fh, import_tra_fh):
   item_name_idx = 1
 
   # Create the "masterwork" weapons that are forged by Taerom
@@ -558,6 +573,7 @@ def generate_weapons(items_tpa_fh, items_tra_fh, taerom_d_fh, thalan_d_fh, halba
       wpm = weapon_plus_modifier(weapon_type, modifier)
       write_item_tpa(items_tpa_fh, wpm["itm_file_prefix"], wpm["suffix"], item_name_idx, item_name_idx + 1, wpm)
       write_item_tra(items_tra_fh, item_name_idx, item_name_idx + 1, wpm)
+      write_import_itm(import_tra_fh, wpm["itm_file_prefix"], wpm["suffix"])
       write_halbaz_dlg(halbaz_d_fh, wpm["itm_file_prefix"], wpm["prev_suffix"], wpm["suffix"])
       item_name_idx += 2
   halbaz_d_fh.write("  IF ~!PartyGoldGT(3999)~ THEN REPLY @3007 GOTO cu#hal_lack_funds\n")
@@ -569,6 +585,9 @@ def main():
   items_tpa_fh = open("lib/items.tpa", mode="w+")
   items_tra_fh = open("tra/English/items.tra", mode="w+")
 
+  import_tra_fh = open("lib/imports.tpa", mode="w+")
+  write_import_header(import_tra_fh)
+
   thalan_d_fh = open("dlg/thalan.d", mode="w+")
   write_thalan_header(thalan_d_fh)
 
@@ -578,11 +597,13 @@ def main():
   halbaz_d_fh = open("dlg/halbaz.d", mode="w+")
   write_halbaz_header(halbaz_d_fh)
 
-  generate_weapons(items_tpa_fh, items_tra_fh, taerom_d_fh, thalan_d_fh, halbaz_d_fh)
+  generate_weapons(items_tpa_fh, items_tra_fh, taerom_d_fh, thalan_d_fh, halbaz_d_fh, import_tra_fh)
 
   write_halbaz_footer(halbaz_d_fh)
   write_thalan_footer(thalan_d_fh)
   write_taerom_footer(taerom_d_fh)
+
+  write_import_footer(import_tra_fh)
 
 
 if __name__ == "__main__":
